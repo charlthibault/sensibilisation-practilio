@@ -21,4 +21,4 @@ On parle aussi de **surface d'attaque** : c'est l'ensemble des portes d'entrée 
 
 | Menace | Vecteur | Vulnérabilité | Actif | Impact |
 |---|---|---|---|---|
-| Un cybercriminel qui veut revendre des données (source, motivation) vole des identifiants par hameçonnage (mode d'attaque) | Un faux email aux couleurs de Practilio qui demande de se reconnecter | Pas de double authentification, et le même mot de passe utilisé partout | Les comptes Practilio et les dossiers patients | Les dossiers patients sont volés et le cabinet doit s'arrêter |
+| Un cybercriminel qui veut revendre des données (source, motivation) vole des identifiants par hameçonnage (mode d'attaque) | Un faux email aux couleurs de Practilio qui demande de se reconnecter | Pas de double authentification, et le même mot de passe utilisé partout | Les comptes Practilio et les dossiers patients | Les dossiers patients sont volés : le cabinet doit notifier la CNIL, prévenir les patients, et perd leur confiance |

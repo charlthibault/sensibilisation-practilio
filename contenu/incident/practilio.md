@@ -4,6 +4,10 @@ Source : à définir
 Écrire en Markdown sous ce commentaire. Tant que le fichier est vide, le site affiche « À remplir ».
 -->
 
+#### Comment nous prévenir
+
+Depuis votre espace Practilio : menu **Aide › Signaler un incident de sécurité**. Ce canal est fictif sur ce site de démonstration. Si vous ne pouvez plus vous connecter, appelez le support au numéro indiqué sur votre contrat, jamais à un numéro reçu dans un message.
+
 #### Quand nous prévenir
 
 - Une connexion à votre compte que vous ne reconnaissez pas, ou un code de double authentification que vous n'avez pas demandé.
@@ -19,7 +23,7 @@ Source : à définir
 3. Fermez les sessions ouvertes depuis votre espace (« Déconnecter tous les appareils »).
 4. Prévenez votre référent informatique ou votre prestataire, et votre responsable.
 5. Notez l'heure, ce que vous avez vu, l'expéditeur ; faites une capture d'écran.
-6. Signalez-nous l'incident par le canal ci-dessus, avec ces éléments.
+6. Signalez-nous l'incident par le canal indiqué plus haut (Aide › Signaler un incident de sécurité), avec ces éléments.
 
 Practilio ne vous demandera jamais votre mot de passe, ni par email, ni par téléphone.
 

@@ -11,7 +11,7 @@ Un hôpital public cumule les règles d'un organisme public, celles de NIS 2 et 
 | Texte | Ce que ça implique | Première action |
 |---|---|---|
 | [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679/oj) | Organisme public : DPO obligatoire, analyses d'impact pour les traitements de santé. Une fuite se [notifie à la CNIL](https://www.cnil.fr/fr/notifier-une-violation-de-donnees-personnelles) sous 72 h. Les exigences de sécurité (HDS, clauses de sous-traitance, réversibilité) s'écrivent dans chaque marché passé avec un éditeur comme Practilio. | Associer le DPO dès le choix d'un nouvel outil. |
-| [NIS 2](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) | La plupart des centres hospitaliers seront entités essentielles : gestion des risques, alerte sous 24 h et notification sous 72 h des incidents, responsabilité de la direction. Un établissement déjà désigné OSE ou OIV applique déjà des règles de l'ANSSI. | Préparer la chaîne d'alerte entre RSSI, DPO et direction. |
+| [NIS 2](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) | La plupart des centres hospitaliers seront entités essentielles (transposition en cours, voir ⚠️ ci-dessous) : gestion des risques, alerte sous 24 h et notification sous 72 h des incidents, responsabilité de la direction. Un établissement déjà désigné OSE ou OIV applique déjà des règles de l'ANSSI. | Préparer la chaîne d'alerte entre RSSI, DPO et direction. |
 | RGS (ordonnance n° 2005-1516) | Les téléservices ouverts aux usagers doivent être homologués avant leur mise en service. | Prévoir l'homologation de tout service ouvert aux patients. |
 
 #### Propre à la santé
@@ -24,5 +24,10 @@ Un hôpital public cumule les règles d'un organisme public, celles de NIS 2 et 
 | [Certification HAS](https://www.has-sante.fr/jcms/p_3563407/fr/mettre-en-oeuvre-le-6e-cycle-de-certification) | Le référentiel inclut la maîtrise des risques, y compris numériques. | Rattacher le plan cyber au plan qualité. |
 | [Programme CaRE](https://esante.gouv.fr/strategie-nationale/cybersecurite) (2023-2027) | Financement par l'ARS des établissements qui atteignent des prérequis : double authentification, maîtrise de l'exposition sur Internet, sauvegardes déconnectées, exercices de crise. | Faire le point avec l'ARS et le GRADeS de votre région. |
 | Biologie et téléconsultation, si l'hôpital en fait | Laboratoire intégré : accréditation COFRAC et [réactovigilance ANSM](https://ansm.sante.fr/documents/reference/cybersecurite-des-dm-et-dmdiv), comme un laboratoire de ville. Téléconsultation : solution hébergée HDS, patient identifié ([référentiel ANS](https://esante.gouv.fr/produits-et-services/telesante/telemedecine/teleconsultation)). | Vérifier ces deux points avec le biomédical et l'éditeur. |
+
+> ⚠️ À surveiller, sources consultées le 23/11/2026 :
+>
+> - NIS 2 : la loi « Résilience », qui la transpose en France, a été adoptée au Sénat le 12/03/2025 et à l'Assemblée nationale en première lecture le 17/11/2026 ; une commission mixte paritaire doit encore se réunir. Les obligations décrites ci-dessus sont celles de la directive : les délais et modalités français restent à confirmer. Sources : [IT for Business](https://www.itforbusiness.fr/loi-resilience-nis-2-assemblee-adopte-110073), [MDP Data](https://mdp-data.com/transposition-nis2-france-loi-resilience/), [Pilote NIS2](https://www.pilote-nis2.fr/guides/loi-resilience-nis2-france).
+> - Identification électronique : version 2.0 du référentiel en cours de publication, échéance envisagée au 31/12/2026 pour les moyens de connexion autres que Pro Santé Connect ([ANS](https://esante.gouv.fr/faq/exigences-ie-cadre-reglementaire-de-l-identification-electronique)).
 
 Textes du Code de la santé publique (CSP) : [Légifrance](https://www.legifrance.gouv.fr/).

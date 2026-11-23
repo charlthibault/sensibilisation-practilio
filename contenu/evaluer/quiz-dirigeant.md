@@ -6,7 +6,7 @@ Source : notes-sujet.md (cas pratiques) ; mapping § Lien avec les cas pratiques
 
 #### Un email signé d'un patient vous demande de lui renvoyer son ordonnance « en réponse à ce message ». L'adresse n'est pas celle de son dossier. Que faites-vous ? {menace=fuite}
 - [ ] Je réponds avec l'ordonnance en pièce jointe, c'est plus rapide
-- [x] J'envoie l'ordonnance par la messagerie de Practilio sur le compte connu du patient, ou je le rappelle au numéro du dossier
+- [x] J'envoie l'ordonnance par la messagerie sécurisée de Mon espace santé du patient, ou je le rappelle au numéro du dossier
 - [ ] Je réponds en demandant sa date de naissance pour vérifier
 
 Rien ne prouve que l'expéditeur est votre patient, et une date de naissance se trouve facilement. Une donnée de santé envoyée à la mauvaise personne est une violation de données.

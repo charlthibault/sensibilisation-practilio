@@ -13,7 +13,7 @@ Un message pressant qui pousse à cliquer est le signe classique de l'hameçonna
 
 #### Un patient vous tend une clé USB pour imprimer son ordonnance. Que faites-vous ? {menace=rancongiciel}
 - [ ] Je la branche, l'antivirus vérifiera
-- [x] Je ne la branche pas et je propose une autre solution (messagerie de Practilio, document sur son téléphone)
+- [x] Je ne la branche pas et je propose une autre solution (le médecin réédite l'ordonnance depuis le dossier du patient)
 - [ ] Je la branche sur le poste du médecin, moins exposé que l'accueil
 
 Une clé peut contenir un programme malveillant, même à l'insu de son propriétaire. Aucun poste qui accède aux dossiers de patients ne doit recevoir un support inconnu.

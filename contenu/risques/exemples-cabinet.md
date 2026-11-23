@@ -30,6 +30,28 @@ Dans votre cabinet : c'est votre logiciel de tous les jours, et ce sont des méd
 
 </details>
 
+#### 1001RDV : un pirate revendique les données de 9 millions de patients
+
+> **Revendiqué** · Novembre 2026 · France
+>
+> **9 millions de patients selon l'attaquant, non confirmé**
+
+Voir dans la matrice : [Hameçonnage et compromission de comptes](#menace-cabinet-hameconnage)
+
+Menace : un attaquant qui revendique le vol · Vecteur : non communiqué
+
+Ce qui s'est passé : un attaquant affirme avoir volé les données de 9 millions de patients d'un logiciel de prise de rendez-vous médicaux (identité, coordonnées, numéro de sécurité sociale, rendez-vous). L'éditeur confirme seulement l'attaque de son site vitrine.
+
+Dans votre cabinet : même non confirmée, une telle revendication suffit à alimenter des faux SMS et emails très crédibles (« confirmez votre rendez-vous chez le Dr X »), envoyés à vos patients comme à votre secrétariat. Restez vigilant sur les messages qui citent un vrai rendez-vous.
+
+<details>
+<summary>Sources et détails</summary>
+
+- Revendication publiée en novembre 2026 ; l'éditeur (Logicielnet) reconnaît une attaque sur son site WordPress, pas sur les données de patients.
+- Source : [Journal du Geek](https://www.journaldugeek.com/2026/11/16/donnees-medicales-9-millions-francais-volees-hacker-1001-rdv/)
+
+</details>
+
 #### Doctolib : des rendez-vous volés via des logiciels connectés
 
 > **Confirmé** · Juillet 2020 · France

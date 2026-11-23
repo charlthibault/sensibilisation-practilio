@@ -549,7 +549,7 @@ def page_responsibilities():
     panel_signaler = f"""<h2>Signaler un incident ou un doute à Practilio</h2>
 <ul>
   <li><strong>Quand</strong> : connexion inconnue à votre compte, faux message « Practilio », rendez-vous ou notifications que personne n'a créés, données visibles par la mauvaise personne.</li>
-  <li><strong>Comment</strong> : par le canal de signalement de votre espace Practilio (canal fictif sur ce site de démonstration).</li>
+  <li><strong>Comment</strong> : depuis votre espace Practilio, menu Aide › Signaler un incident de sécurité (canal fictif sur ce site de démonstration).</li>
   <li><strong>Ensuite</strong> : Practilio analyse, vous prévient si les données de vos patients sont touchées et vous donne les éléments pour vos déclarations.</li>
 </ul>
 <p>Le détail, étape par étape : <a href="incident.html#practilio">Incident : qui contacter</a>.</p>"""

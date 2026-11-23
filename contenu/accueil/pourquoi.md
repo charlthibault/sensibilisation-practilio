@@ -14,4 +14,10 @@ Practilio gère la prise de rendez-vous, les notifications, la téléconsultatio
 
 #### Pourquoi ce guide
 
+Pourquoi un éditeur de logiciel de santé investit-il dans la sécurité de ses utilisateurs ?
+
+- Votre compte est une porte d'entrée sur la plateforme. Les fuites récentes chez des éditeurs de logiciels médicaux sont passées par des comptes de praticiens volés, pas par une faille des serveurs ([exemples](risques.html#exemples)). Protéger votre compte, c'est protéger tous les patients hébergés chez Practilio.
+- C'est notre rôle de sous-traitant. Le RGPD (art. 28) nous oblige à vous aider à assurer la sécurité des données et à respecter vos obligations de notification.
+- C'est la condition de votre confiance. Un éditeur qui héberge des données de santé doit pouvoir montrer, à vous comme aux établissements publics qui le choisissent, que la sécurité est assurée d'un bout à l'autre de la chaîne.
+
 Nous ne pouvons pas protéger vos postes à votre place, mais nous pouvons vous aider à savoir ce qui vous concerne, ce qu'il faut faire en premier et vers qui vous tourner.

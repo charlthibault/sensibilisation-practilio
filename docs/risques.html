@@ -64,7 +64,7 @@
 <table>
 <thead><tr><th>Menace</th><th>Vecteur</th><th>Vulnérabilité</th><th>Actif</th><th>Impact</th></tr></thead>
 <tbody>
-<tr><td>Un cybercriminel qui veut revendre des données (source, motivation) vole des identifiants par hameçonnage (mode d'attaque)</td><td>Un faux email aux couleurs de Practilio qui demande de se reconnecter</td><td>Pas de double authentification, et le même mot de passe utilisé partout</td><td>Les comptes Practilio et les dossiers patients</td><td>Les dossiers patients sont volés et le cabinet doit s'arrêter</td></tr>
+<tr><td>Un cybercriminel qui veut revendre des données (source, motivation) vole des identifiants par hameçonnage (mode d'attaque)</td><td>Un faux email aux couleurs de Practilio qui demande de se reconnecter</td><td>Pas de double authentification, et le même mot de passe utilisé partout</td><td>Les comptes Practilio et les dossiers patients</td><td>Les dossiers patients sont volés : le cabinet doit notifier la CNIL, prévenir les patients, et perd leur confiance</td></tr>
 </tbody></table>
 </div>
 </section>
@@ -368,7 +368,7 @@
 </div>
 <div class="carousel" role="region" aria-roledescription="carrousel" aria-label="Attaques réelles, Cabinet libéral">
 <div class="carousel-track" tabindex="0">
-<article class="attack" id="attaque-cabinet-1" aria-roledescription="fiche" aria-label="1 sur 2">
+<article class="attack" id="attaque-cabinet-1" aria-roledescription="fiche" aria-label="1 sur 3">
 <h4>Cegedim : des comptes de médecins utilisés pour aspirer des dossiers patients</h4>
 <blockquote>
 <p><span class="status status-confirme">Confirmé</span> · Fin 2025 · France</p>
@@ -387,7 +387,25 @@
 </ul>
 </details>
 </article>
-<article class="attack" id="attaque-cabinet-2" aria-roledescription="fiche" aria-label="2 sur 2">
+<article class="attack" id="attaque-cabinet-2" aria-roledescription="fiche" aria-label="2 sur 3">
+<h4>1001RDV : un pirate revendique les données de 9 millions de patients</h4>
+<blockquote>
+<p><span class="status status-revendique">Revendiqué</span> · Novembre 2026 · France</p>
+<p><strong>9 millions de patients selon l'attaquant, non confirmé</strong></p>
+</blockquote>
+<p>Voir dans la matrice : <a href="#menace-cabinet-hameconnage">Hameçonnage et compromission de comptes</a></p>
+<p>Menace : un attaquant qui revendique le vol · Vecteur : non communiqué</p>
+<p>Ce qui s'est passé : un attaquant affirme avoir volé les données de 9 millions de patients d'un logiciel de prise de rendez-vous médicaux (identité, coordonnées, numéro de sécurité sociale, rendez-vous). L'éditeur confirme seulement l'attaque de son site vitrine.</p>
+<p>Dans votre cabinet : même non confirmée, une telle revendication suffit à alimenter des faux SMS et emails très crédibles (« confirmez votre rendez-vous chez le Dr X »), envoyés à vos patients comme à votre secrétariat. Restez vigilant sur les messages qui citent un vrai rendez-vous.</p>
+<details>
+<summary>Sources et détails</summary>
+<ul>
+<li>Revendication publiée en novembre 2026 ; l'éditeur (Logicielnet) reconnaît une attaque sur son site WordPress, pas sur les données de patients.</li>
+<li>Source : <a href="https://www.journaldugeek.com/2026/11/16/donnees-medicales-9-millions-francais-volees-hacker-1001-rdv/">Journal du Geek</a></li>
+</ul>
+</details>
+</article>
+<article class="attack" id="attaque-cabinet-3" aria-roledescription="fiche" aria-label="3 sur 3">
 <h4>Doctolib : des rendez-vous volés via des logiciels connectés</h4>
 <blockquote>
 <p><span class="status status-confirme">Confirmé</span> · Juillet 2020 · France</p>

@@ -16,7 +16,7 @@ Un prestataire vient faire ce que votre équipe ne peut pas faire seule : survei
 | Orange Cyberdefense | Surveillance du réseau (SOC), réponse à incident, audit | Qualifié ANSSI PDIS, PRIS et PASSI ; présent au catalogue de l'ANS | Hôpital, laboratoire multi-sites |
 | Intrinsec | Réponse à incident (CERT Intrinsec), gestion de crise | Qualifié ANSSI PRIS | Hôpital, laboratoire |
 | Synacktiv | Tests d'intrusion, audit de sécurité | Qualifié ANSSI PASSI | Hôpital, laboratoire |
-| Mailinblack | Filtrage des courriels, simulations d'hameçonnage | Utilisé par des établissements de santé (GHT) | Cabinet, laboratoire, hôpital |
+| Advens | Surveillance du réseau (SOC managé), réponse à incident | Qualifié ANSSI PDIS | Hôpital, laboratoire multi-sites |
 | Conscio Technologies | Sensibilisation du personnel (plateforme Sensiwave, hébergée en France) | Programmes par secteur | Laboratoire, hôpital |
 
 > Practilio ne recommande aucun prestataire ou éditeur cité sur cette page et ne reçoit rien de leur part. Avant de signer, vérifiez que la qualification est toujours valide sur la liste de l'ANSSI. Qualifications relevées le 23/11/2026.

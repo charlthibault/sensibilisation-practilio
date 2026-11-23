@@ -25,7 +25,7 @@ Un laboratoire multi-sites traite des données de santé à grande échelle et p
 
 > ⚠️ À surveiller, sources consultées le 23/11/2026 :
 >
-> - NIS 2 : la loi « Résilience », qui la transpose en France, a été adoptée au Sénat le 12/03/2025 et à l'Assemblée nationale en première lecture le 17/11/2026 ; une commission mixte paritaire doit encore se réunir. Le rattachement des laboratoires au secteur « santé » reste à confirmer. Sources : IT for Business, MDP Data, [Pilote NIS2](https://www.pilote-nis2.fr/guides/loi-resilience-nis2-france).
+> - NIS 2 : la loi « Résilience », qui la transpose en France, a été adoptée au Sénat le 12/03/2025 et à l'Assemblée nationale en première lecture le 17/11/2026 ; une commission mixte paritaire doit encore se réunir. Le rattachement des laboratoires au secteur « santé » reste à confirmer. Sources : [IT for Business](https://www.itforbusiness.fr/loi-resilience-nis-2-assemblee-adopte-110073), [MDP Data](https://mdp-data.com/transposition-nis2-france-loi-resilience/), [Pilote NIS2](https://www.pilote-nis2.fr/guides/loi-resilience-nis2-france).
 > - Identification électronique : version 2.0 du référentiel en cours de publication, échéance envisagée au 31/12/2026 pour les moyens autres que Pro Santé Connect (ANS).
 
 Textes du Code de la santé publique (CSP) : [Légifrance](https://www.legifrance.gouv.fr/).
