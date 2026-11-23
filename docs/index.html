@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sécurité des données de santé : par où commencer · Guide cyber Practilio</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <p class="disclaimer" role="note"><strong>Projet pédagogique EPITA.</strong> Practilio est une entreprise fictive : ce site n'est pas un service réel.</p>
+  <header class="site">
+    <a class="brand" href="index.html">Guide cyber Practilio</a>
+    <nav class="menu" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html" aria-current="page">Accueil</a></li>
+      <li><a href="risques.html">Mes risques</a></li>
+      <li><a href="responsabilites.html">Qui fait quoi</a></li>
+      <li><a href="obligations.html">Mes obligations</a></li>
+      <li><a href="premiers-pas.html">Premiers pas</a></li>
+      <li><a href="evaluer.html">Vérifier mes réflexes</a></li>
+      <li><a href="incident.html">Incident : qui contacter</a></li>
+      <li><a href="ressources.html">Acteurs, prestataires, outils</a></li>
+    </ul>
+    </nav>
+    <p class="current-choice" id="current-choice"></p>
+  </header>
+  <main>
+<h1>Sécurité des données de santé : par où commencer ?</h1>
+
+<section id="je-suis">
+<h2>Je suis…</h2>
+<p>Répondez à deux questions : le site affichera ensuite uniquement ce qui vous concerne.</p>
+<div class="selector">
+  <fieldset><legend>Je travaille dans…</legend>
+    <button type="button" data-pick-ctx="cabinet">Un cabinet libéral (2 à 5 médecins)</button>
+    <button type="button" data-pick-ctx="labo">Un laboratoire de biologie multi-sites</button>
+    <button type="button" data-pick-ctx="hopital">Un hôpital public</button>
+  </fieldset>
+</div>
+<div class="selector">
+  <fieldset><legend>Mon rôle…</legend>
+    <button type="button" data-pick-profile="employe">Accueil, secrétariat, assistant</button>
+    <button type="button" data-pick-profile="it">Référent ou prestataire informatique, DSI</button>
+    <button type="button" data-pick-profile="dirigeant">Praticien titulaire, gérant, direction</button>
+  </fieldset>
+</div>
+</section>
+
+<div class="tabs" data-tabs>
+<div class="tab-list" aria-label="Sections de la page">
+  <a href="#pourquoi" data-tab="pourquoi">Pourquoi ce guide</a>
+  <a href="#parcours" data-tab="parcours">Votre parcours</a>
+</div>
+<div class="tab-panel" id="pourquoi">
+<h2>Pourquoi Practilio publie ce guide</h2>
+<div class="block">
+<p>Practilio gère la prise de rendez-vous, les notifications, la téléconsultation et le stockage des données de santé pour environ 25 000 praticiens et 28 hôpitaux et cliniques. Par souci de transparence, voici ce qui nous a conduits à publier ce guide.</p>
+<h4>Ce que nous avons appris cette année</h4>
+<ul>
+<li>Chez nous, nous avons renforcé notre propre organisation : notre équipe sécurité a passé en revue nos outils et nos accès, et nous avons fait évoluer nos pratiques là où c'était nécessaire. Cet effort se poursuit.</li>
+<li>Lors de l'incident sur notre module de facturation, notre support a reçu de nombreux appels de cabinets inquiets. Ils ne savaient ni quoi vérifier de leur côté, ni qui prévenir.</li>
+<li>Notre plateforme est hébergée chez un hébergeur certifié HDS, mais vous vous y connectez depuis vos propres postes, comptes et réseaux. Une grande partie du risque se trouve donc de votre côté, souvent sans informaticien pour vous aider.</li>
+</ul>
+<h4>Pourquoi ce guide</h4>
+<p>Nous ne pouvons pas protéger vos postes à votre place, mais nous pouvons vous aider à savoir ce qui vous concerne, ce qu'il faut faire en premier et vers qui vous tourner.</p>
+</div>
+</div>
+<div class="tab-panel" id="parcours">
+<h2>Votre parcours</h2>
+<ol>
+  <li><a href="risques.html">Mes risques</a> : ce qui peut arriver dans votre structure</li>
+  <li><a href="responsabilites.html">Qui fait quoi</a> : ce que fait Practilio, ce qui reste chez vous</li>
+  <li><a href="obligations.html">Mes obligations</a> : les textes qui s'appliquent à vous</li>
+  <li><a href="premiers-pas.html">Premiers pas</a> : les bons gestes pour votre rôle</li>
+  <li><a href="evaluer.html">Vérifier mes réflexes</a> : un quiz corrigé de cinq questions</li>
+</ol>
+<p>À tout moment : <a href="incident.html">Incident : qui contacter</a> · <a href="ressources.html">Acteurs, prestataires, outils</a>.</p>
+</div>
+</div>
+
+    <p class="next-step">Étape suivante : <a href="risques.html">Mes risques</a></p>
+  </main>
+  <footer class="site">Projet pédagogique EPITA · Practilio est une entreprise fictive · <a href="demarche.html">Démarche et sources</a></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

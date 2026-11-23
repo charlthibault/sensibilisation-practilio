@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vérifier mes réflexes · Guide cyber Practilio</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <p class="disclaimer" role="note"><strong>Projet pédagogique EPITA.</strong> Practilio est une entreprise fictive : ce site n'est pas un service réel.</p>
+  <header class="site">
+    <a class="brand" href="index.html">Guide cyber Practilio</a>
+    <nav class="menu" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="risques.html">Mes risques</a></li>
+      <li><a href="responsabilites.html">Qui fait quoi</a></li>
+      <li><a href="obligations.html">Mes obligations</a></li>
+      <li><a href="premiers-pas.html">Premiers pas</a></li>
+      <li><a href="evaluer.html" aria-current="page">Vérifier mes réflexes</a></li>
+      <li><a href="incident.html">Incident : qui contacter</a></li>
+      <li><a href="ressources.html">Acteurs, prestataires, outils</a></li>
+    </ul>
+    </nav>
+    <p class="current-choice" id="current-choice"></p>
+  </header>
+  <main>
+<h1>Vérifier mes réflexes</h1>
+<p data-no-profile>Choisissez votre rôle pour voir ce qui vous concerne :</p>
+<div class="selector">
+  <fieldset><legend>Mon rôle…</legend>
+    <button type="button" data-pick-profile="employe">Accueil, secrétariat, assistant</button>
+    <button type="button" data-pick-profile="it">Référent ou prestataire informatique, DSI</button>
+    <button type="button" data-pick-profile="dirigeant">Praticien titulaire, gérant, direction</button>
+  </fieldset>
+</div>
+
+<div class="tabs" data-tabs>
+<div class="tab-list" aria-label="Sections de la page">
+  <a href="#quiz" data-tab="quiz">Quiz</a>
+  <a href="#suivi" data-tab="suivi">Suivi des résultats</a>
+</div>
+<div class="tab-panel" id="quiz">
+<h2>Le quiz de votre rôle</h2>
+<p>Cinq situations tirées du quotidien d'un cabinet, d'un laboratoire ou d'un hôpital. Répondez, puis lisez la correction.</p>
+<section data-profile="employe">
+<h3 data-no-profile>Employé</h3>
+<form class="quiz" data-quiz="employe">
+<fieldset class="quiz-q">
+<legend>1. Un email aux couleurs de Practilio vous demande de changer votre mot de passe, qui « expire aujourd'hui ». Que faites-vous ?</legend>
+<label><input type="radio" name="q-employe-1" value="0"> Je clique sur le lien et je change mon mot de passe tout de suite</label>
+<label><input type="radio" name="q-employe-1" value="1"> Je réponds à l'email pour demander s'il est authentique</label>
+<label><input type="radio" name="q-employe-1" value="2" data-correct> Je tape moi-même l'adresse habituelle de Practilio, et je signale le message</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> Je tape moi-même l'adresse habituelle de Practilio, et je signale le message</p>
+<p>Un message pressant qui pousse à cliquer est le signe classique de l'hameçonnage. La page ouverte par le lien peut imiter Practilio avec une adresse presque identique. Répondre à l'email ne prouve rien : c'est l'attaquant qui répondra. Voyez <a href="premiers-pas.html#fiche-reflexe">la situation détaillée</a>.</p>
+</details>
+</fieldset>
+<fieldset class="quiz-q">
+<legend>2. Un patient vous tend une clé USB pour imprimer son ordonnance. Que faites-vous ?</legend>
+<label><input type="radio" name="q-employe-2" value="0"> Je la branche, l'antivirus vérifiera</label>
+<label><input type="radio" name="q-employe-2" value="1" data-correct> Je ne la branche pas et je propose une autre solution (messagerie de Practilio, document sur son téléphone)</label>
+<label><input type="radio" name="q-employe-2" value="2"> Je la branche sur le poste du médecin, moins exposé que l'accueil</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> Je ne la branche pas et je propose une autre solution (messagerie de Practilio, document sur son téléphone)</p>
+<p>Une clé peut contenir un programme malveillant, même à l'insu de son propriétaire. Aucun poste qui accède aux dossiers de patients ne doit recevoir un support inconnu.</p>
+</details>
+</fieldset>
+<fieldset class="quiz-q">
+<legend>3. Votre écran affiche une demande de rançon et vos fichiers ont changé de nom. Quel est le premier geste ?</legend>
+<label><input type="radio" name="q-employe-3" value="0"> J'éteins l'ordinateur</label>
+<label><input type="radio" name="q-employe-3" value="1" data-correct> Je débranche le câble réseau et je coupe le Wi-Fi, sans éteindre, puis je préviens</label>
+<label><input type="radio" name="q-employe-3" value="2"> Je paie pour récupérer les fichiers au plus vite</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> Je débranche le câble réseau et je coupe le Wi-Fi, sans éteindre, puis je préviens</p>
+<p>Débrancher le réseau empêche la propagation aux autres postes. Éteindre ferait perdre des traces utiles à l'enquête. Payer ne garantit rien et finance les attaquants. La suite : <a href="incident.html#situation">que faire selon la situation</a>.</p>
+</details>
+</fieldset>
+<fieldset class="quiz-q">
+<legend>4. Une collègue partage avec toute l'équipe, par un simple lien, un tableur en ligne créé sur son compte personnel, avec les rendez-vous et leur motif. Où est le problème ?</legend>
+<label><input type="radio" name="q-employe-4" value="0"> Il n'y en a pas, si le lien n'est donné qu'aux collègues</label>
+<label><input type="radio" name="q-employe-4" value="1"> Le seul problème est que le tableur n'est pas protégé par un mot de passe</label>
+<label><input type="radio" name="q-employe-4" value="2" data-correct> Des données de santé sortent des outils prévus : le cabinet ne les maîtrise plus et n'importe qui ayant reçu le lien y accède</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> Des données de santé sortent des outils prévus : le cabinet ne les maîtrise plus et n'importe qui ayant reçu le lien y accède</p>
+<p>Le motif de consultation est une donnée de santé. Stocké hors des outils prévus, il échappe au cabinet : impossible de le protéger ou de couper l'accès au départ de la collègue. Le bon réflexe est d'exprimer le besoin au responsable. Voyez <a href="premiers-pas.html#scenario">le scénario complet</a>.</p>
+</details>
+</fieldset>
+<fieldset class="quiz-q">
+<legend>5. Pour gagner du temps, vous voulez reformuler un courrier médical avec un assistant d'intelligence artificielle en ligne. Que pouvez-vous y mettre ?</legend>
+<label><input type="radio" name="q-employe-5" value="0"> Le courrier, si je retire le nom du patient</label>
+<label><input type="radio" name="q-employe-5" value="1" data-correct> Rien qui concerne un patient, sauf outil validé par l'établissement</label>
+<label><input type="radio" name="q-employe-5" value="2"> Le courrier complet, ces outils suppriment les données après usage</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> Rien qui concerne un patient, sauf outil validé par l'établissement</p>
+<p>Ce que vous tapez part sur les serveurs de l'éditeur, parfois hors de l'Union européenne, et peut être conservé. Retirer le nom ne suffit pas : une date et une pathologie permettent souvent de reconnaître quelqu'un. Voyez <a href="premiers-pas.html#ia">l'IA et les données de patients</a>.</p>
+</details>
+</fieldset>
+<p class="quiz-actions" hidden><button type="submit">Voir mon score</button> <span class="quiz-score" aria-live="polite"></span></p>
+<p class="quiz-last" hidden></p>
+</form>
+</section>
+<section data-profile="it">
+<h3 data-no-profile>Équipe IT</h3>
+<form class="quiz" data-quiz="it">
+<fieldset class="quiz-q">
+<legend>1. Vous découvrez un VPN de télémaintenance ouvert il y a trois ans pour un équipement d'imagerie, avec un mot de passe partagé. Que faites-vous en premier ?</legend>
+<label><input type="radio" name="q-it-1" value="0"> Je le coupe immédiatement</label>
+<label><input type="radio" name="q-it-1" value="1" data-correct> Je contacte le fabricant et le biomédical pour savoir s'il sert encore, avant de le sécuriser ou de le fermer</label>
+<label><input type="radio" name="q-it-1" value="2"> Je change le mot de passe et je n'en parle à personne</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> Je contacte le fabricant et le biomédical pour savoir s'il sert encore, avant de le sécuriser ou de le fermer</p>
+<p>Couper sans prévenir peut interrompre une maintenance en cours sur un équipement médical. S'il sert : compte nominatif, double authentification, ouverture à la demande, journalisation. Sinon : fermeture et vérification des journaux. Dans tous les cas, l'accès entre dans l'inventaire avec un propriétaire et une date de revue.</p>
+</details>
+</fieldset>
+<fieldset class="quiz-q">
+<legend>2. Le compte de votre prestataire est administrateur de tout le réseau et accède aux comptes des médecins, « c'était plus simple ». Quelle est la bonne correction ?</legend>
+<label><input type="radio" name="q-it-2" value="0"> Rien, le prestataire est de confiance</label>
+<label><input type="radio" name="q-it-2" value="1"> Changer le mot de passe du compte tous les mois</label>
+<label><input type="radio" name="q-it-2" value="2" data-correct> Limiter ses droits au strict nécessaire, un compte nominatif par intervenant avec double authentification, et séparer administration et accès aux données de santé</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> Limiter ses droits au strict nécessaire, un compte nominatif par intervenant avec double authentification, et séparer administration et accès aux données de santé</p>
+<p>Si le prestataire est compromis, l'attaquant hérite de tous ses droits. Le moindre privilège limite les dégâts. Le contrat doit prévoir la revue de ces accès et l'information en cas d'incident.</p>
+</details>
+</fieldset>
+<fieldset class="quiz-q">
+<legend>3. Quelle sauvegarde protège réellement contre un rançongiciel ?</legend>
+<label><input type="radio" name="q-it-3" value="0"> Une copie sur un disque réseau partagé, faite chaque nuit</label>
+<label><input type="radio" name="q-it-3" value="1" data-correct> Au moins une copie déconnectée ou non modifiable, dont la restauration est testée régulièrement</label>
+<label><input type="radio" name="q-it-3" value="2"> La synchronisation des fichiers dans un dossier en ligne</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> Au moins une copie déconnectée ou non modifiable, dont la restauration est testée régulièrement</p>
+<p>Un rançongiciel chiffre aussi les sauvegardes qu'il peut atteindre, et une synchronisation recopie les fichiers chiffrés. Seul un test de restauration prouve qu'elle fonctionne.</p>
+</details>
+</fieldset>
+<fieldset class="quiz-q">
+<legend>4. Sur quels accès la double authentification est-elle prioritaire ?</legend>
+<label><input type="radio" name="q-it-4" value="0"> Seulement sur les postes des médecins</label>
+<label><input type="radio" name="q-it-4" value="1" data-correct> Messagerie, accès distants, consoles d'administration et comptes Practilio</label>
+<label><input type="radio" name="q-it-4" value="2"> Elle est inutile si les mots de passe sont longs</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> Messagerie, accès distants, consoles d'administration et comptes Practilio</p>
+<p>C'est la mesure qui bloque le plus d'attaques par vol d'identifiants : un mot de passe volé par hameçonnage ne suffit plus pour entrer.</p>
+</details>
+</fieldset>
+<fieldset class="quiz-q">
+<legend>5. Un portable de l'équipe est volé dans une voiture. Quelle mesure, prise avant, limite le plus les conséquences ?</legend>
+<label><input type="radio" name="q-it-5" value="0" data-correct> Le chiffrement du disque et le verrouillage automatique de la session</label>
+<label><input type="radio" name="q-it-5" value="1"> Un antivirus à jour</label>
+<label><input type="radio" name="q-it-5" value="2"> Un mot de passe sur le fond d'écran</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> Le chiffrement du disque et le verrouillage automatique de la session</p>
+<p>Sans chiffrement, il suffit de retirer le disque pour lire les données, mot de passe de session ou non. Pensez aussi à couper les accès de l'appareil (messagerie, Practilio, VPN) dès la déclaration du vol.</p>
+</details>
+</fieldset>
+<p class="quiz-actions" hidden><button type="submit">Voir mon score</button> <span class="quiz-score" aria-live="polite"></span></p>
+<p class="quiz-last" hidden></p>
+</form>
+</section>
+<section data-profile="dirigeant">
+<h3 data-no-profile>Dirigeant</h3>
+<form class="quiz" data-quiz="dirigeant">
+<fieldset class="quiz-q">
+<legend>1. Un email signé d'un patient vous demande de lui renvoyer son ordonnance « en réponse à ce message ». L'adresse n'est pas celle de son dossier. Que faites-vous ?</legend>
+<label><input type="radio" name="q-dirigeant-1" value="0"> Je réponds avec l'ordonnance en pièce jointe, c'est plus rapide</label>
+<label><input type="radio" name="q-dirigeant-1" value="1" data-correct> J'envoie l'ordonnance par la messagerie de Practilio sur le compte connu du patient, ou je le rappelle au numéro du dossier</label>
+<label><input type="radio" name="q-dirigeant-1" value="2"> Je réponds en demandant sa date de naissance pour vérifier</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> J'envoie l'ordonnance par la messagerie de Practilio sur le compte connu du patient, ou je le rappelle au numéro du dossier</p>
+<p>Rien ne prouve que l'expéditeur est votre patient, et une date de naissance se trouve facilement. Une donnée de santé envoyée à la mauvaise personne est une violation de données.</p>
+</details>
+</fieldset>
+<fieldset class="quiz-q">
+<legend>2. Votre fournisseur de matériel annonce par email un changement de RIB, facture « en retard » à l'appui. Que faites-vous ?</legend>
+<label><input type="radio" name="q-dirigeant-2" value="0"> Je mets à jour le RIB pour ne pas pénaliser le fournisseur</label>
+<label><input type="radio" name="q-dirigeant-2" value="1"> Je réponds à l'email pour demander confirmation</label>
+<label><input type="radio" name="q-dirigeant-2" value="2" data-correct> Je ne change rien et j'appelle le fournisseur au numéro que je connais déjà (contrat, ancienne facture)</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> Je ne change rien et j'appelle le fournisseur au numéro que je connais déjà (contrat, ancienne facture)</p>
+<p>C'est la fraude au faux fournisseur, souvent préparée en piratant une vraie messagerie : répondre à l'email, c'est écrire à l'attaquant. Fixez la règle pour tout le monde : aucun changement de coordonnées bancaires sans double vérification.</p>
+</details>
+</fieldset>
+<fieldset class="quiz-q">
+<legend>3. Des données de patients ont été envoyées à la mauvaise personne et présentent un risque pour eux. De combien de temps disposez-vous pour notifier la CNIL ?</legend>
+<label><input type="radio" name="q-dirigeant-3" value="0"> Une semaine</label>
+<label><input type="radio" name="q-dirigeant-3" value="1" data-correct> 72 heures après en avoir pris connaissance</label>
+<label><input type="radio" name="q-dirigeant-3" value="2"> Un mois, le temps de terminer l'enquête</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> 72 heures après en avoir pris connaissance</p>
+<p>Le délai court dès que vous avez connaissance de la violation. Vous pouvez compléter la notification ensuite. Voyez <a href="incident.html#interlocuteurs">vos interlocuteurs</a>.</p>
+</details>
+</fieldset>
+<fieldset class="quiz-q">
+<legend>4. Vos dossiers de patients sont stockés chez Practilio, hébergeur certifié HDS. Qui est responsable de ces données au sens du RGPD ?</legend>
+<label><input type="radio" name="q-dirigeant-4" value="0"> Practilio uniquement, puisqu'il les héberge</label>
+<label><input type="radio" name="q-dirigeant-4" value="1" data-correct> Vous, responsable du traitement ; Practilio est votre sous-traitant, avec ses propres obligations</label>
+<label><input type="radio" name="q-dirigeant-4" value="2"> Personne en particulier, la certification HDS couvre tout</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> Vous, responsable du traitement ; Practilio est votre sous-traitant, avec ses propres obligations</p>
+<p>Vous décidez pourquoi et comment les données sont utilisées : vous êtes responsable du traitement. Practilio sécurise sa plateforme ; vous gérez qui y accède et comment. Voyez <a href="responsabilites.html#vous">qui est responsable de quoi</a>.</p>
+</details>
+</fieldset>
+<fieldset class="quiz-q">
+<legend>5. Une secrétaire quitte le cabinet vendredi. Quand son compte doit-il être fermé ?</legend>
+<label><input type="radio" name="q-dirigeant-5" value="0"> Lors du prochain point annuel sur les comptes</label>
+<label><input type="radio" name="q-dirigeant-5" value="1"> Quand sa remplaçante arrive, pour lui transmettre le compte</label>
+<label><input type="radio" name="q-dirigeant-5" value="2" data-correct> Le jour même de son départ</label>
+<details class="quiz-answer"><summary>Réponse</summary>
+<p><strong>Bonne réponse :</strong> Le jour même de son départ</p>
+<p>Un compte resté ouvert est un accès que plus personne ne surveille. Chaque personne a son propre compte : la remplaçante en reçoit un à son nom.</p>
+</details>
+</fieldset>
+<p class="quiz-actions" hidden><button type="submit">Voir mon score</button> <span class="quiz-score" aria-live="polite"></span></p>
+<p class="quiz-last" hidden></p>
+</form>
+</section>
+</div>
+<div class="tab-panel" id="suivi">
+<h2>Comment Practilio suit les résultats</h2>
+<div class="block">
+<p>Sensibiliser ne suffit pas : il faut vérifier que le message est passé, et que les comportements changent. Practilio suivrait quelques indicateurs simples, publiés chaque trimestre à ses clients.</p>
+<blockquote>
+<p>Sur ce site de démonstration, votre score reste dans votre navigateur (« Votre dernier résultat ») : rien n'est envoyé. Dans une version réelle, le quiz serait proposé dans l'espace Practilio, et seuls des résultats agrégés et anonymes seraient exploités.</p>
+</blockquote>
+<table>
+<thead><tr><th>Indicateur</th><th>Ce qu'il mesure</th><th>Comment</th><th>Rythme</th></tr></thead>
+<tbody>
+<tr><td>Taux de réussite au quiz, par profil et par contexte</td><td>La compréhension des bons réflexes</td><td>Part des bonnes réponses, ex. employés de cabinet vs DSI d'hôpital</td><td>Trimestriel</td></tr>
+<tr><td>Questions les plus échouées</td><td>Les messages qui ne passent pas</td><td>Classement des questions par taux d'erreur, pour retravailler le contenu correspondant</td><td>Trimestriel</td></tr>
+<tr><td>Nombre de signalements reçus</td><td>La confiance pour signaler</td><td>Messages reçus via le <a href="incident.html#practilio">canal de signalement</a>, dont les signalements de faux emails « Practilio »</td><td>Mensuel</td></tr>
+<tr><td>Délai de signalement</td><td>La rapidité de réaction</td><td>Temps entre l'incident constaté et le signalement à Practilio</td><td>Par incident</td></tr>
+<tr><td>Part des comptes avec double authentification</td><td>Le passage à l'action</td><td>Comptes Practilio ayant activé la double authentification, par type de structure</td><td>Mensuel</td></tr>
+<tr><td>Participation</td><td>La portée de la sensibilisation</td><td>Nombre de personnes ayant fait le quiz, par profil</td><td>Trimestriel</td></tr>
+</tbody></table>
+<h4>Comment lire ces chiffres</h4>
+<ul>
+<li>Un nombre de signalements qui augmente est souvent une bonne nouvelle au début : les utilisateurs reconnaissent mieux les attaques et osent les signaler.</li>
+<li>Un taux de réussite faible sur une question montre un contenu à améliorer, pas des utilisateurs à blâmer.</li>
+<li>La comparaison dans le temps compte plus que le chiffre absolu : on vise une progression d'un trimestre à l'autre.</li>
+</ul>
+</div>
+</div>
+</div>
+
+    <p class="next-step">Étape suivante : <a href="incident.html">Incident : qui contacter</a></p>
+  </main>
+  <footer class="site">Projet pédagogique EPITA · Practilio est une entreprise fictive · <a href="demarche.html">Démarche et sources</a></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

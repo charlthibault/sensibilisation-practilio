@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qui fait quoi · Guide cyber Practilio</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <p class="disclaimer" role="note"><strong>Projet pédagogique EPITA.</strong> Practilio est une entreprise fictive : ce site n'est pas un service réel.</p>
+  <header class="site">
+    <a class="brand" href="index.html">Guide cyber Practilio</a>
+    <nav class="menu" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="risques.html">Mes risques</a></li>
+      <li><a href="responsabilites.html" aria-current="page">Qui fait quoi</a></li>
+      <li><a href="obligations.html">Mes obligations</a></li>
+      <li><a href="premiers-pas.html">Premiers pas</a></li>
+      <li><a href="evaluer.html">Vérifier mes réflexes</a></li>
+      <li><a href="incident.html">Incident : qui contacter</a></li>
+      <li><a href="ressources.html">Acteurs, prestataires, outils</a></li>
+    </ul>
+    </nav>
+    <p class="current-choice" id="current-choice"></p>
+  </header>
+  <main>
+<h1>Qui fait quoi</h1>
+<p data-no-ctx>Choisissez votre contexte pour voir ce qui vous concerne :</p>
+<div class="selector">
+  <fieldset><legend>Je travaille dans…</legend>
+    <button type="button" data-pick-ctx="cabinet">Un cabinet libéral (2 à 5 médecins)</button>
+    <button type="button" data-pick-ctx="labo">Un laboratoire de biologie multi-sites</button>
+    <button type="button" data-pick-ctx="hopital">Un hôpital public</button>
+  </fieldset>
+</div>
+<p>Ce que fait Practilio, ce qui reste chez vous.</p>
+
+<div class="tabs" data-tabs>
+<div class="tab-list" aria-label="Sections de la page">
+  <a href="#practilio" data-tab="practilio">Le partage des rôles</a>
+  <a href="#hds" data-tab="hds">Hébergement HDS</a>
+  <a href="#vous" data-tab="vous">Bonnes pratiques</a>
+  <a href="#signaler" data-tab="signaler">Signaler à Practilio</a>
+</div>
+<div class="tab-panel" id="practilio">
+<h2>Le partage des rôles</h2>
+<div class="block">
+<p>Pour les données de vos patients, vous êtes responsable du traitement : vous décidez qui y accède et ce qui en est fait. Practilio est votre sous-traitant (RGPD, art. 28) : nous traitons ces données pour votre compte, selon vos instructions. Chacun répond de sa part.</p>
+<table>
+<thead><tr><th>Practilio s'en charge</th><th>Practilio ne le fait pas à votre place</th></tr></thead>
+<tbody>
+<tr><td>Héberger les données chez un hébergeur certifié HDS</td><td>Gérer vos postes, votre messagerie et votre réseau</td></tr>
+<tr><td>Proposer la double authentification et Pro Santé Connect</td><td>Décider qui a un compte chez vous, et le fermer au départ d'une personne</td></tr>
+<tr><td>Vous prévenir sans délai si une violation touche vos patients</td><td>Notifier la CNIL : c'est à vous de le faire</td></tr>
+</tbody></table>
+</div>
+</div>
+<div class="tab-panel" id="hds">
+<h2>L'hébergement HDS : ce qu'il couvre, ce qu'il ne couvre pas</h2>
+<div class="block">
+<p>La loi impose à Practilio un hébergeur certifié HDS (hébergeur de données de santé). Cette certification porte sur la plateforme, pas sur ce qui se passe dans votre structure.</p>
+<table>
+<thead><tr><th>Couvert par Practilio et son hébergeur</th><th>Reste de votre côté</th></tr></thead>
+<tbody>
+<tr><td>Les serveurs et les centres de données où sont stockées les données</td><td>Vos ordinateurs, tablettes et téléphones</td></tr>
+<tr><td>La disponibilité de la plateforme (pannes, maintenance, plan de secours)</td><td>Vos mots de passe, et le fait de ne jamais partager un compte</td></tr>
+<tr><td>Les sauvegardes des données stockées sur la plateforme</td><td>Les fichiers exportés, téléchargés ou imprimés depuis Practilio</td></tr>
+<tr><td>Le chiffrement des données et des échanges avec la plateforme</td><td>Vos boîtes mail, surtout les messageries personnelles</td></tr>
+<tr><td>Le journal des connexions et des accès à la plateforme</td><td>Le choix des personnes qui ont un compte, et le retrait de ce compte à leur départ</td></tr>
+<tr><td>Le stockage des données dans l'Espace économique européen</td><td>Votre réseau, votre box Internet, votre wifi</td></tr>
+<tr><td>Les contrôles sur les équipes de Practilio qui interviennent sur la plateforme</td><td>Votre prestataire informatique et ses accès à distance</td></tr>
+</tbody></table>
+<blockquote>
+<p>La certification HDS ne protège pas vos identifiants. Si quelqu'un se connecte avec vos identifiants, la plateforme voit un utilisateur légitime : elle ne peut pas savoir que ce n'est pas vous.</p>
+</blockquote>
+</div>
+</div>
+<div class="tab-panel" id="vous">
+<h2>Bonnes pratiques pour vous</h2>
+<div class="block">
+<ul>
+<li>Un compte nominatif par personne, jamais partagé, avec la double authentification activée.</li>
+<li>Chacun n'accède qu'à ce dont il a besoin, et un compte est fermé le jour du départ de la personne.</li>
+<li>Des postes à jour, une session verrouillée dès que vous quittez votre bureau.</li>
+<li>Aucune donnée de patient sur une messagerie personnelle ou dans un outil en ligne non prévu. Entre professionnels, utilisez une messagerie sécurisée de santé (MSSanté).</li>
+<li>Un accès à distance de votre prestataire ouvert seulement quand vous l'autorisez.</li>
+<li>Un doute, un incident : signalez-le, même si vous pensez avoir fait une erreur.</li>
+</ul>
+</div>
+<section data-ctx="cabinet">
+<h3 data-no-ctx>Cabinet libéral</h3>
+<div class="block">
+<ul>
+<li>Le médecin titulaire (ou la société du cabinet) est responsable du traitement. Sans service informatique, ces gestes reposent sur chacun.</li>
+<li>En cas de fuite de données, c'est le cabinet qui notifie la CNIL sous 72 h, même si l'incident vient de Practilio.</li>
+</ul>
+<p>Le détail : <a href="obligations.html">Mes obligations</a>.</p>
+</div>
+</section>
+<section data-ctx="labo">
+<h3 data-no-ctx>Laboratoire de biologie</h3>
+<div class="block">
+<ul>
+<li>Le laboratoire est responsable du traitement, y compris des résultats mis à disposition dans l'Espace Patient de Practilio.</li>
+<li>Le laboratoire notifie la CNIL sous 72 h et signale les incidents graves à l'ARS ; un DPO est obligatoire.</li>
+<li>La télémaintenance des automates par les fabricants s'encadre comme l'accès d'un prestataire.</li>
+</ul>
+<p>Le détail : <a href="obligations.html">Mes obligations</a>.</p>
+</div>
+</section>
+<section data-ctx="hopital">
+<h3 data-no-ctx>Hôpital public</h3>
+<div class="block">
+<ul>
+<li>L'établissement est responsable du traitement ; son DPO est le premier contact sur les données.</li>
+<li>L'établissement notifie la CNIL sous 72 h et signale les incidents graves à l'ARS.</li>
+<li>Internes, intérimaires, remplaçants : chaque compte est nominatif et limité à la durée de la mission.</li>
+<li>Le marché public passé avec Practilio doit contenir les exigences de sécurité (HDS, clauses de sous-traitance, réversibilité).</li>
+</ul>
+<p>Le détail : <a href="obligations.html">Mes obligations</a>.</p>
+</div>
+</section>
+</div>
+<div class="tab-panel" id="signaler">
+<h2>Signaler un incident ou un doute à Practilio</h2>
+<ul>
+  <li><strong>Quand</strong> : connexion inconnue à votre compte, faux message « Practilio », rendez-vous ou notifications que personne n'a créés, données visibles par la mauvaise personne.</li>
+  <li><strong>Comment</strong> : par le canal de signalement de votre espace Practilio (canal fictif sur ce site de démonstration).</li>
+  <li><strong>Ensuite</strong> : Practilio analyse, vous prévient si les données de vos patients sont touchées et vous donne les éléments pour vos déclarations.</li>
+</ul>
+<p>Le détail, étape par étape : <a href="incident.html#practilio">Incident : qui contacter</a>.</p>
+</div>
+</div>
+
+    <p class="next-step">Étape suivante : <a href="obligations.html">Mes obligations</a></p>
+  </main>
+  <footer class="site">Projet pédagogique EPITA · Practilio est une entreprise fictive · <a href="demarche.html">Démarche et sources</a></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

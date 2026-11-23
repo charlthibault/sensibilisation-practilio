@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mes obligations · Guide cyber Practilio</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <p class="disclaimer" role="note"><strong>Projet pédagogique EPITA.</strong> Practilio est une entreprise fictive : ce site n'est pas un service réel.</p>
+  <header class="site">
+    <a class="brand" href="index.html">Guide cyber Practilio</a>
+    <nav class="menu" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="risques.html">Mes risques</a></li>
+      <li><a href="responsabilites.html">Qui fait quoi</a></li>
+      <li><a href="obligations.html" aria-current="page">Mes obligations</a></li>
+      <li><a href="premiers-pas.html">Premiers pas</a></li>
+      <li><a href="evaluer.html">Vérifier mes réflexes</a></li>
+      <li><a href="incident.html">Incident : qui contacter</a></li>
+      <li><a href="ressources.html">Acteurs, prestataires, outils</a></li>
+    </ul>
+    </nav>
+    <p class="current-choice" id="current-choice"></p>
+  </header>
+  <main>
+<h1>Mes obligations</h1>
+<p data-no-ctx>Choisissez votre contexte pour voir ce qui vous concerne :</p>
+<div class="selector">
+  <fieldset><legend>Je travaille dans…</legend>
+    <button type="button" data-pick-ctx="cabinet">Un cabinet libéral (2 à 5 médecins)</button>
+    <button type="button" data-pick-ctx="labo">Un laboratoire de biologie multi-sites</button>
+    <button type="button" data-pick-ctx="hopital">Un hôpital public</button>
+  </fieldset>
+</div>
+<p>Les textes liés à la cybersécurité qui s'appliquent à votre structure. Le droit commun vaut pour toute structure qui traite des données personnelles ; les règles propres à la santé s'y ajoutent.</p>
+
+<section id="textes">
+<section data-ctx="cabinet">
+<h3 data-no-ctx>Cabinet libéral</h3>
+<div class="block">
+<p>Un cabinet de 2 à 5 médecins n'est pas concerné par NIS 2. Le RGPD et les règles propres à la santé s'appliquent, elles, dès le premier patient.</p>
+<h4>Droit commun</h4>
+<table>
+<thead><tr><th>Texte</th><th>Ce que ça implique</th><th>Première action</th></tr></thead>
+<tbody>
+<tr><td><a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">RGPD</a></td><td>Le cabinet est responsable du traitement des données de ses patients, Practilio est son sous-traitant (<a href="responsabilites.html#practilio">qui fait quoi</a>). Il faut une sécurité adaptée au risque, un registre des traitements et un contrat avec chaque prestataire. Une fuite de données se <a href="https://www.cnil.fr/fr/notifier-une-violation-de-donnees-personnelles">notifie à la CNIL</a> sous 72 h. À cette taille, pas de DPO obligatoire, sauf pour un gros cabinet de groupe ou un centre de santé.</td><td>Remplir le registre des traitements et décider qui, au cabinet, notifie la CNIL.</td></tr>
+<tr><td><a href="https://eur-lex.europa.eu/eli/dir/2022/2555/oj">NIS 2</a></td><td>Hors champ : la directive exclut les micro et petites entreprises.</td><td>Aucune.</td></tr>
+</tbody></table>
+<h4>Propre à la santé</h4>
+<table>
+<thead><tr><th>Texte</th><th>Ce que ça implique</th><th>Première action</th></tr></thead>
+<tbody>
+<tr><td>Hébergement de données de santé (CSP, art. L1111-8)</td><td>Toute donnée de santé stockée hors du cabinet (logiciel en ligne, sauvegarde externe, Practilio) doit l'être chez un hébergeur certifié HDS (<a href="responsabilites.html#hds">ce que ça couvre</a>).</td><td>Demander leur certificat HDS à vos prestataires.</td></tr>
+<tr><td><a href="https://esante.gouv.fr/faq/exigences-ie-cadre-reglementaire-de-l-identification-electronique">Identification électronique</a> (PGSSI-S)</td><td>Les professionnels se connectent par <a href="https://esante.gouv.fr/produits-services/pro-sante-connect">Pro Santé Connect</a> (carte CPS ou e-CPS) ou par une authentification forte.</td><td>e-CPS pour chaque médecin, double authentification pour le secrétariat.</td></tr>
+<tr><td>Signalement des incidents graves (CSP, art. L1111-8-2)</td><td>Pas obligatoire pour un cabinet, mais un signalement sur le <a href="https://signalement.social-sante.gouv.fr/">portail</a> donne accès à l'appui du <a href="https://esante.gouv.fr/securite/cert-sante">CERT Santé</a>.</td><td>Garder le lien du portail dans la fiche incident.</td></tr>
+<tr><td><a href="https://esante.gouv.fr/produits-et-services/telesante/telemedecine/teleconsultation">Téléconsultation</a> (CSP, art. L6316-1), si vous en faites</td><td>Solution sécurisée, hébergée HDS, patient identifié avant l'échange.</td><td>Demander à votre éditeur où il en est du référentiel de l'ANS.</td></tr>
+</tbody></table>
+<blockquote>
+<p>⚠️ À surveiller, sources ANS consultées le 23/11/2026 :</p>
+<ul>
+<li>Identification électronique : la version 2.0 du référentiel est en cours de publication, avec une échéance envisagée au 31/12/2026 pour les moyens de connexion autres que Pro Santé Connect.</li>
+<li>Téléconsultation : le référentiel de l'ANS est opposable depuis le 14/02/2024 aux sociétés de téléconsultation ; son extension aux éditeurs utilisés en ville est annoncée, sans date.</li>
+</ul>
+</blockquote>
+<p>Textes du Code de la santé publique (CSP) : <a href="https://www.legifrance.gouv.fr/">Légifrance</a>.</p>
+</div>
+</section>
+<section data-ctx="labo">
+<h3 data-no-ctx>Laboratoire de biologie</h3>
+<div class="block">
+<p>Un laboratoire multi-sites traite des données de santé à grande échelle et pilote des automates : il cumule le RGPD, probablement NIS 2, et deux obligations propres à la biologie.</p>
+<h4>Droit commun</h4>
+<table>
+<thead><tr><th>Texte</th><th>Ce que ça implique</th><th>Première action</th></tr></thead>
+<tbody>
+<tr><td><a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">RGPD</a></td><td>Le laboratoire est responsable du traitement sur tous ses sites (SIL, serveur de résultats, prise de rendez-vous), Practilio est sous-traitant. Traitement à grande échelle : DPO obligatoire et analyse d'impact. Une fuite se <a href="https://www.cnil.fr/fr/notifier-une-violation-de-donnees-personnelles">notifie à la CNIL</a> sous 72 h.</td><td>Désigner le DPO et lancer l'analyse d'impact, en commençant par les résultats en ligne.</td></tr>
+<tr><td><a href="https://eur-lex.europa.eu/eli/dir/2022/2555/oj">NIS 2</a></td><td>À partir de 50 salariés ou 10 M€ de chiffre d'affaires (chiffres du groupe si vous en faites partie), le laboratoire deviendrait probablement entité importante ou essentielle : gestion des risques, signalement des incidents, responsabilité de la direction. En dessous, en principe hors champ.</td><td>Vérifier vos chiffres et suivre la transposition (ci-dessous).</td></tr>
+</tbody></table>
+<h4>Propre à la santé</h4>
+<table>
+<thead><tr><th>Texte</th><th>Ce que ça implique</th><th>Première action</th></tr></thead>
+<tbody>
+<tr><td>Hébergement de données de santé (CSP, art. L1111-8)</td><td>Toute donnée de santé stockée hors du laboratoire doit l'être chez un hébergeur certifié HDS (<a href="responsabilites.html#hds">ce que ça couvre</a>).</td><td>Demander leur certificat HDS à vos prestataires.</td></tr>
+<tr><td><a href="https://esante.gouv.fr/faq/exigences-ie-cadre-reglementaire-de-l-identification-electronique">Identification électronique</a> (PGSSI-S)</td><td>Connexion par <a href="https://esante.gouv.fr/produits-services/pro-sante-connect">Pro Santé Connect</a> ou par une authentification forte.</td><td>Pro Santé Connect ou double authentification pour tout le personnel, sur tous les sites.</td></tr>
+<tr><td>Signalement des incidents graves (CSP, art. L1111-8-2 ; décret n° 2016-1214)</td><td>Obligatoire, sur le <a href="https://signalement.social-sante.gouv.fr/">portail des signalements</a>. Le <a href="https://esante.gouv.fr/securite/cert-sante">CERT Santé</a> apporte ensuite son appui.</td><td>Désigner qui signale, sur chaque site.</td></tr>
+<tr><td><a href="https://www.has-sante.fr/jcms/c_2811553/fr/accreditation-en-biologie-medicale">Accréditation COFRAC</a> (ISO 15189)</td><td>La norme impose de maîtriser le système d'information : SIL, middleware, automates, sauvegarde. Une attaque du SIL devient aussi un problème de qualité.</td><td>Ajouter le scénario « SIL indisponible » au système qualité.</td></tr>
+<tr><td><a href="https://ansm.sante.fr/documents/reference/cybersecurite-des-dm-et-dmdiv">Réactovigilance</a> (ANSM)</td><td>Automates et réactifs sont des dispositifs de diagnostic in vitro : un incident qui fausse des résultats, attaque informatique comprise, se signale à l'ANSM et au fabricant. Il n'y a pas de canal ANSM dédié au cyber.</td><td>Prévoir qui déclare, et inventorier les télémaintenances des fabricants.</td></tr>
+</tbody></table>
+<blockquote>
+<p>⚠️ À surveiller, sources consultées le 23/11/2026 :</p>
+<ul>
+<li>NIS 2 : la loi « Résilience », qui la transpose en France, a été adoptée au Sénat le 12/03/2025 et à l'Assemblée nationale en première lecture le 17/11/2026 ; une commission mixte paritaire doit encore se réunir. Le rattachement des laboratoires au secteur « santé » reste à confirmer. Sources : IT for Business, MDP Data, <a href="https://www.pilote-nis2.fr/guides/loi-resilience-nis2-france">Pilote NIS2</a>.</li>
+<li>Identification électronique : version 2.0 du référentiel en cours de publication, échéance envisagée au 31/12/2026 pour les moyens autres que Pro Santé Connect (ANS).</li>
+</ul>
+</blockquote>
+<p>Textes du Code de la santé publique (CSP) : <a href="https://www.legifrance.gouv.fr/">Légifrance</a>.</p>
+</div>
+</section>
+<section data-ctx="hopital">
+<h3 data-no-ctx>Hôpital public</h3>
+<div class="block">
+<p>Un hôpital public cumule les règles d'un organisme public, celles de NIS 2 et celles du secteur de la santé. C'est aussi le seul des trois contextes à pouvoir financer une partie de sa mise à niveau (programme CaRE).</p>
+<h4>Droit commun</h4>
+<table>
+<thead><tr><th>Texte</th><th>Ce que ça implique</th><th>Première action</th></tr></thead>
+<tbody>
+<tr><td><a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">RGPD</a></td><td>Organisme public : DPO obligatoire, analyses d'impact pour les traitements de santé. Une fuite se <a href="https://www.cnil.fr/fr/notifier-une-violation-de-donnees-personnelles">notifie à la CNIL</a> sous 72 h. Les exigences de sécurité (HDS, clauses de sous-traitance, réversibilité) s'écrivent dans chaque marché passé avec un éditeur comme Practilio.</td><td>Associer le DPO dès le choix d'un nouvel outil.</td></tr>
+<tr><td><a href="https://eur-lex.europa.eu/eli/dir/2022/2555/oj">NIS 2</a></td><td>La plupart des centres hospitaliers seront entités essentielles : gestion des risques, alerte sous 24 h et notification sous 72 h des incidents, responsabilité de la direction. Un établissement déjà désigné OSE ou OIV applique déjà des règles de l'ANSSI.</td><td>Préparer la chaîne d'alerte entre RSSI, DPO et direction.</td></tr>
+<tr><td>RGS (ordonnance n° 2005-1516)</td><td>Les téléservices ouverts aux usagers doivent être homologués avant leur mise en service.</td><td>Prévoir l'homologation de tout service ouvert aux patients.</td></tr>
+</tbody></table>
+<h4>Propre à la santé</h4>
+<table>
+<thead><tr><th>Texte</th><th>Ce que ça implique</th><th>Première action</th></tr></thead>
+<tbody>
+<tr><td>Hébergement de données de santé (CSP, art. L1111-8)</td><td>Toute donnée de santé stockée hors de l'établissement doit l'être chez un hébergeur certifié HDS (<a href="responsabilites.html#hds">ce que ça couvre</a>).</td><td>Exiger le certificat dans chaque marché.</td></tr>
+<tr><td><a href="https://esante.gouv.fr/faq/exigences-ie-cadre-reglementaire-de-l-identification-electronique">Identification électronique</a> (PGSSI-S)</td><td>Connexion par <a href="https://esante.gouv.fr/produits-services/pro-sante-connect">Pro Santé Connect</a> ou par une authentification forte.</td><td>Double authentification sur les accès distants, les comptes d'administration et Practilio.</td></tr>
+<tr><td>Signalement des incidents graves (CSP, art. L1111-8-2 ; décret n° 2016-1214)</td><td>Obligatoire, sur le <a href="https://signalement.social-sante.gouv.fr/">portail des signalements</a>, avec l'appui du <a href="https://esante.gouv.fr/securite/cert-sante">CERT Santé</a>.</td><td>L'intégrer à la procédure de crise.</td></tr>
+<tr><td><a href="https://www.has-sante.fr/jcms/p_3563407/fr/mettre-en-oeuvre-le-6e-cycle-de-certification">Certification HAS</a></td><td>Le référentiel inclut la maîtrise des risques, y compris numériques.</td><td>Rattacher le plan cyber au plan qualité.</td></tr>
+<tr><td><a href="https://esante.gouv.fr/strategie-nationale/cybersecurite">Programme CaRE</a> (2023-2027)</td><td>Financement par l'ARS des établissements qui atteignent des prérequis : double authentification, maîtrise de l'exposition sur Internet, sauvegardes déconnectées, exercices de crise.</td><td>Faire le point avec l'ARS et le GRADeS de votre région.</td></tr>
+<tr><td>Biologie et téléconsultation, si l'hôpital en fait</td><td>Laboratoire intégré : accréditation COFRAC et <a href="https://ansm.sante.fr/documents/reference/cybersecurite-des-dm-et-dmdiv">réactovigilance ANSM</a>, comme un laboratoire de ville. Téléconsultation : solution hébergée HDS, patient identifié (<a href="https://esante.gouv.fr/produits-et-services/telesante/telemedecine/teleconsultation">référentiel ANS</a>).</td><td>Vérifier ces deux points avec le biomédical et l'éditeur.</td></tr>
+</tbody></table>
+<p>Textes du Code de la santé publique (CSP) : <a href="https://www.legifrance.gouv.fr/">Légifrance</a>.</p>
+</div>
+</section>
+</section>
+
+    <p class="next-step">Étape suivante : <a href="premiers-pas.html">Premiers pas</a></p>
+  </main>
+  <footer class="site">Projet pédagogique EPITA · Practilio est une entreprise fictive · <a href="demarche.html">Démarche et sources</a></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

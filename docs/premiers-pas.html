@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Premiers pas · Guide cyber Practilio</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <p class="disclaimer" role="note"><strong>Projet pédagogique EPITA.</strong> Practilio est une entreprise fictive : ce site n'est pas un service réel.</p>
+  <header class="site">
+    <a class="brand" href="index.html">Guide cyber Practilio</a>
+    <nav class="menu" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="risques.html">Mes risques</a></li>
+      <li><a href="responsabilites.html">Qui fait quoi</a></li>
+      <li><a href="obligations.html">Mes obligations</a></li>
+      <li><a href="premiers-pas.html" aria-current="page">Premiers pas</a></li>
+      <li><a href="evaluer.html">Vérifier mes réflexes</a></li>
+      <li><a href="incident.html">Incident : qui contacter</a></li>
+      <li><a href="ressources.html">Acteurs, prestataires, outils</a></li>
+    </ul>
+    </nav>
+    <p class="current-choice" id="current-choice"></p>
+  </header>
+  <main>
+<h1>Premiers pas</h1>
+<p data-no-profile>Choisissez votre rôle pour voir ce qui vous concerne :</p>
+<div class="selector">
+  <fieldset><legend>Mon rôle…</legend>
+    <button type="button" data-pick-profile="employe">Accueil, secrétariat, assistant</button>
+    <button type="button" data-pick-profile="it">Référent ou prestataire informatique, DSI</button>
+    <button type="button" data-pick-profile="dirigeant">Praticien titulaire, gérant, direction</button>
+  </fieldset>
+</div>
+
+<div class="tabs" data-tabs>
+<div class="tab-list" aria-label="Sections de la page">
+  <a href="#fiche-reflexe" data-tab="fiche-reflexe">Ma fiche réflexe</a>
+  <a href="#ia" data-tab="ia">IA et données</a>
+  <a href="#scenario" data-tab="scenario">Scénario</a>
+</div>
+<div class="tab-panel" id="fiche-reflexe">
+<h2>Ma fiche réflexe</h2>
+<section data-profile="employe">
+<h3 data-no-profile>Employé</h3>
+<div class="block">
+<p>Vous ouvrez les messages, accueillez les patients et gérez l'agenda : la plupart des tentatives d'attaque passent d'abord par l'accueil. Cette fiche s'imprime et se garde près du poste.</p>
+<h4>Chaque jour</h4>
+<ul>
+<li>☐ Je me connecte avec mon propre compte, jamais celui d'un collègue, même pour dépanner. Sinon, personne ne peut savoir qui a fait quoi.</li>
+<li>☐ Mon mot de passe est une phrase longue, différente pour chaque service. Un gestionnaire de mots de passe évite de les retenir.</li>
+<li>☐ La double authentification est activée sur Practilio. Je ne donne jamais le code reçu sur mon téléphone, même à quelqu'un qui dit appeler de la part de Practilio.</li>
+<li>☐ Je verrouille mon écran dès que je quitte mon poste (Windows + L, ou Ctrl + Cmd + Q sur Mac) : l'accueil est un lieu de passage.</li>
+<li>☐ Devant un email pressant (mot de passe qui expire, paiement, pièce jointe), je tape moi-même l'adresse du site au lieu de cliquer sur le lien.</li>
+<li>☐ Je ne branche aucune clé USB inconnue, y compris celle d'un patient.</li>
+<li>☐ Les données de patients restent dans les outils prévus : pas de messagerie personnelle, pas de photo d'un dossier avec mon téléphone, pas d'outil en ligne non validé (<a href="#ia">le cas de l'IA</a>).</li>
+</ul>
+<h4>En cas de problème</h4>
+<ul>
+<li>☐ Écran de rançon : je débranche le câble réseau et coupe le Wi-Fi, je n'éteins pas, je préviens.</li>
+<li>☐ J'ai cliqué ou saisi mon mot de passe : je le change et je préviens tout de suite. Plus c'est signalé tôt, plus c'est facile à rattraper.</li>
+<li>☐ J'ai un doute : je demande à mon référent informatique.</li>
+</ul>
+<p>Qui appeler : <a href="incident.html#situation">Incident, qui contacter</a>.</p>
+</div>
+</section>
+<section data-profile="it">
+<h3 data-no-profile>Équipe IT</h3>
+<div class="block">
+<p>Référent interne, prestataire ou DSI : votre rôle est de réduire les portes d'entrée et de rendre un incident récupérable. Les points sont classés par effet sur les menaces de <a href="risques.html#vue-ensemble">la matrice</a>. À revoir à chaque intervention.</p>
+<h4>Hygiène</h4>
+<ul>
+<li>☐ L'inventaire des comptes (personnel, prestataires, comptes techniques) est à jour ; les comptes sans titulaire sont fermés.</li>
+<li>☐ Aucun utilisateur n'est administrateur de son poste, et les comptes d'administration sont séparés des comptes de messagerie.</li>
+<li>☐ Le personnel informatique n'a pas d'accès aux données de santé : il n'en a pas besoin pour travailler.</li>
+<li>☐ La double authentification protège la messagerie, les accès distants, les consoles d'administration et les comptes Practilio. C'est la mesure qui bloque le plus de vols d'identifiants.</li>
+<li>☐ Les mises à jour sont appliquées, en priorité sur ce qui est exposé à Internet (pare-feu, VPN, messagerie).</li>
+<li>☐ Une sauvegarde est hors ligne ou non modifiable, et la dernière restauration testée date de moins d'un an. Un rançongiciel chiffre aussi les sauvegardes qu'il peut atteindre.</li>
+<li>☐ Chaque VPN, outil de télémaintenance et interconnexion a un propriétaire, une raison d'exister et une date de revue. Ce qui ne sert plus est coupé.</li>
+<li>☐ Les postes administratifs, les postes médicaux et les équipements biomédicaux sont sur des réseaux séparés, et aucun bureau à distance (RDP) n'est exposé directement sur Internet.</li>
+<li>☐ Les journaux de connexion et d'administration sont conservés : sans eux, impossible de savoir ce qui a été touché.</li>
+</ul>
+<h4>En cas d'incident</h4>
+<ul>
+<li>☐ J'isole les postes touchés sans les éteindre.</li>
+<li>☐ Je coupe les accès distants non indispensables.</li>
+<li>☐ Je vérifie que les sauvegardes sont intactes avant de restaurer.</li>
+<li>☐ Je préviens le responsable, et Practilio si ses comptes sont concernés (<a href="incident.html#practilio">comment</a>).</li>
+</ul>
+<p>Les outils pour chaque point : <a href="ressources.html#outils">catégories d'outils</a>.</p>
+</div>
+</section>
+<section data-profile="dirigeant">
+<h3 data-no-profile>Dirigeant</h3>
+<div class="block">
+<p>Vous n'avez pas à devenir informaticien, mais votre structure est responsable des données de ses patients : Practilio sécurise sa plateforme, vous décidez qui y accède et comment (<a href="responsabilites.html#practilio">qui fait quoi</a>). À revoir une fois par an.</p>
+<h4>Organisation</h4>
+<ul>
+<li>☐ Chaque personne a son propre compte, avec les seuls droits dont elle a besoin : le secrétariat n'a pas à ouvrir les comptes rendus médicaux.</li>
+<li>☐ Les comptes des personnes parties sont fermés le jour du départ.</li>
+<li>☐ La double authentification est imposée pour tous les comptes qui accèdent aux données de santé, à commencer par le mien et celui du prestataire informatique.</li>
+<li>☐ J'ai demandé à mon prestataire où sont les sauvegardes, si l'une d'elles est déconnectée du réseau, et quand une restauration a été testée pour la dernière fois.</li>
+<li>☐ Le contrat du prestataire précise ce qu'il fait, avec quels accès, et comment il me prévient en cas d'incident. Ses accès à distance sont fermés quand il n'intervient pas.</li>
+<li>☐ Mon équipe sait qu'elle peut signaler une erreur sans être sanctionnée.</li>
+</ul>
+<h4>Le jour d'un incident</h4>
+<ul>
+<li>☐ J'ai la liste de <a href="incident.html#interlocuteurs">mes interlocuteurs</a> à portée de main, sur papier.</li>
+<li>☐ Fuite de données de patients : je décide d'une notification à la CNIL, sous 72 heures.</li>
+<li>☐ Incident touchant Practilio : je préviens Practilio (<a href="incident.html#practilio">comment</a>).</li>
+<li>☐ Je porte plainte en cas d'attaque.</li>
+</ul>
+</div>
+</section>
+</div>
+<div class="tab-panel" id="ia">
+<h2>Outils d'IA et données de patients</h2>
+<div class="block">
+<p>Assistants conversationnels, outils de transcription ou de traduction en ligne : ils font gagner du temps. Mais tout ce que vous y tapez ou y déposez quitte votre établissement.</p>
+<h4>Où partent les données ?</h4>
+<ul>
+<li>Elles sont envoyées sur les serveurs de l'éditeur, parfois hors de l'Union européenne.</li>
+<li>Elles peuvent être conservées, relues par des personnes chez l'éditeur ou réutilisées pour améliorer l'outil, selon ses conditions d'utilisation.</li>
+<li>Une fois envoyées, vous ne pouvez plus les reprendre.</li>
+</ul>
+<p>Pour des données de santé, la loi impose un hébergement chez un hébergeur certifié (HDS) et un cadre précis. Un outil grand public ne remplit pas ces conditions.</p>
+<h4>Ce qu'il ne faut jamais y mettre</h4>
+<ul>
+<li>Un compte rendu, une ordonnance, un résultat d'analyse ou une partie de dossier.</li>
+<li>Le nom, la date de naissance, le numéro de sécurité sociale ou les coordonnées d'un patient.</li>
+<li>Vos mots de passe, des captures d'écran de vos logiciels métier, des documents internes.</li>
+</ul>
+<p>Retirer le nom ne suffit pas toujours : une date, un lieu et une pathologie rare permettent souvent de reconnaître quelqu'un.</p>
+<h4>Cas : un compte rendu collé dans un assistant</h4>
+<p>Un médecin colle un compte rendu de consultation dans un assistant en ligne pour le reformuler plus vite.</p>
+<details>
+<summary>Ce qu'il fallait faire</summary>
+<ul>
+<li>Ne pas utiliser d'outil en ligne non validé par l'établissement pour des données de patients.</li>
+<li>Si c'est déjà fait : prévenez votre responsable. Il évalue s'il s'agit d'une violation de données à déclarer à la CNIL (délai de 72 heures). Supprimez la conversation si l'outil le permet.</li>
+<li>Pour la suite : demandez à votre établissement quels outils sont autorisés et dans quelles conditions.</li>
+</ul>
+<p>Voyez la carte <a href="risques.html#menace-cabinet-fuite">fuite de données</a> de la matrice.</p>
+</details>
+</div>
+</div>
+<div class="tab-panel" id="scenario">
+<h2>Scénario : un outil monté hors du périmètre</h2>
+<div class="block">
+<p>Ce scénario est fictif. Il montre comment une bonne intention peut ouvrir une brèche.</p>
+<h4>L'histoire</h4>
+<p>Dans un cabinet de quatre médecins, la secrétaire trouve que l'agenda est difficile à partager quand elle travaille de chez elle. Pour gagner du temps, elle crée un tableur en ligne gratuit avec son adresse personnelle. Elle y recopie chaque jour les rendez-vous du lendemain (noms, téléphones, motifs de consultation) et le partage par lien avec ses collègues.</p>
+<p>Six mois plus tard, elle quitte le cabinet. Le tableur reste sur son compte personnel. Le lien de partage, lui, circule toujours : il a été transféré par email à un remplaçant, puis à un stagiaire.</p>
+<h4>Ce qui pose problème</h4>
+<ul>
+<li>Des données de santé (le motif de consultation en est une) sont stockées hors des outils prévus, chez un hébergeur non certifié.</li>
+<li>Le cabinet ne sait pas que cet outil existe : personne ne peut le protéger ni le fermer.</li>
+<li>Le lien donne accès à n'importe qui l'ayant reçu, sans mot de passe.</li>
+<li>Au départ de la secrétaire, l'accès n'a pas été coupé.</li>
+</ul>
+<h4>Les signaux d'alerte</h4>
+<ul>
+<li>« Je l'ai mis sur mon compte, c'est plus pratique. »</li>
+<li>Un outil que personne n'a validé, utilisé par toute l'équipe.</li>
+<li>Des données recopiées d'un logiciel vers un autre.</li>
+</ul>
+<h4>Ce qu'il fallait faire</h4>
+<ol>
+<li>Exprimer le besoin au responsable ou au référent informatique : l'agenda de Practilio ou un outil validé permet souvent déjà de travailler à distance.</li>
+<li>Si un outil manque, le choisir avec le cabinet, avec des comptes nominatifs.</li>
+<li>En découvrant ce tableur : récupérer les données, supprimer le fichier, prévenir le responsable. Il évalue si la CNIL doit être notifiée.</li>
+</ol>
+<p>Voyez aussi <a href="responsabilites.html#vous">qui est responsable de quoi</a>.</p>
+</div>
+</div>
+</div>
+
+    <p class="next-step">Étape suivante : <a href="evaluer.html">Vérifier mes réflexes</a></p>
+  </main>
+  <footer class="site">Projet pédagogique EPITA · Practilio est une entreprise fictive · <a href="demarche.html">Démarche et sources</a></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

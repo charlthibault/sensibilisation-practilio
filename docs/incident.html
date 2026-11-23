@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Incident : qui contacter · Guide cyber Practilio</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <p class="disclaimer" role="note"><strong>Projet pédagogique EPITA.</strong> Practilio est une entreprise fictive : ce site n'est pas un service réel.</p>
+  <header class="site">
+    <a class="brand" href="index.html">Guide cyber Practilio</a>
+    <nav class="menu" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="risques.html">Mes risques</a></li>
+      <li><a href="responsabilites.html">Qui fait quoi</a></li>
+      <li><a href="obligations.html">Mes obligations</a></li>
+      <li><a href="premiers-pas.html">Premiers pas</a></li>
+      <li><a href="evaluer.html">Vérifier mes réflexes</a></li>
+      <li><a href="incident.html" aria-current="page">Incident : qui contacter</a></li>
+      <li><a href="ressources.html">Acteurs, prestataires, outils</a></li>
+    </ul>
+    </nav>
+    <p class="current-choice" id="current-choice"></p>
+  </header>
+  <main>
+<h1>Incident : qui contacter</h1>
+<p data-no-ctx>Choisissez votre contexte pour voir ce qui vous concerne :</p>
+<div class="selector">
+  <fieldset><legend>Je travaille dans…</legend>
+    <button type="button" data-pick-ctx="cabinet">Un cabinet libéral (2 à 5 médecins)</button>
+    <button type="button" data-pick-ctx="labo">Un laboratoire de biologie multi-sites</button>
+    <button type="button" data-pick-ctx="hopital">Un hôpital public</button>
+  </fieldset>
+</div>
+<p>Vous avez un incident ou un doute : repérez votre situation, faites le premier geste, prévenez les bons interlocuteurs.</p>
+
+<div class="tabs" data-tabs>
+<div class="tab-list" aria-label="Sections de la page">
+  <a href="#practilio" data-tab="practilio">Incident Practilio</a>
+  <a href="#situation" data-tab="situation">Selon la situation</a>
+  <a href="#interlocuteurs" data-tab="interlocuteurs">Vos interlocuteurs</a>
+</div>
+<div class="tab-panel" id="practilio">
+<h2>L'incident touche Practilio ou mon compte Practilio</h2>
+<div class="block">
+<blockquote>
+<p><strong>Canal fictif.</strong> Practilio est une entreprise fictive : l'adresse <code>securite@practilio.example</code> et le bouton « Signaler un incident » de l'espace Practilio n'existent pas. Ils montrent ce qu'un éditeur doit proposer.</p>
+</blockquote>
+<h4>Quand nous prévenir</h4>
+<ul>
+<li>Une connexion à votre compte que vous ne reconnaissez pas, ou un code de double authentification que vous n'avez pas demandé.</li>
+<li>Un email ou un SMS « Practilio » qui vous demande votre mot de passe ou vous envoie vers une adresse qui ressemble à la nôtre sans être la nôtre.</li>
+<li>Des rendez-vous, des messages ou des notifications aux patients que personne au cabinet n'a créés.</li>
+<li>Des données d'un patient affichées chez quelqu'un qui ne devrait pas les voir.</li>
+<li>Un service Practilio inaccessible ou au comportement inhabituel.</li>
+</ul>
+<h4>Ce que vous faites de votre côté, dans l'ordre</h4>
+<ol>
+<li>Ne cliquez pas, ne répondez pas au message suspect. Ne le transférez pas à vos collègues.</li>
+<li>Changez votre mot de passe en tapant vous-même l'adresse de Practilio dans le navigateur, jamais depuis le lien reçu.</li>
+<li>Fermez les sessions ouvertes depuis votre espace (« Déconnecter tous les appareils »).</li>
+<li>Prévenez votre référent informatique ou votre prestataire, et votre responsable.</li>
+<li>Notez l'heure, ce que vous avez vu, l'expéditeur ; faites une capture d'écran.</li>
+<li>Signalez-nous l'incident par le canal ci-dessus, avec ces éléments.</li>
+</ol>
+<p>Practilio ne vous demandera jamais votre mot de passe, ni par email, ni par téléphone.</p>
+<h4>Ce que Practilio fait ensuite</h4>
+<ul>
+<li>Nous accusons réception et analysons l'incident de notre côté (connexions, journaux, comptes concernés).</li>
+<li>Si des données de vos patients sont touchées, nous vous prévenons sans délai : en tant que sous-traitant, c'est notre obligation (RGPD art. 28 et 33).</li>
+<li>Nous vous donnons les éléments dont vous avez besoin pour vos propres déclarations.</li>
+</ul>
+<p>Attention : votre cabinet ou votre établissement reste responsable des données de ses patients. C'est à lui, pas à Practilio, de notifier la CNIL et, selon les cas, l'ARS. Voir <a href="#interlocuteurs">vos interlocuteurs</a> ci-dessous et <a href="responsabilites.html">qui est responsable de quoi</a>.</p>
+</div>
+</div>
+<div class="tab-panel" id="situation">
+<h2>Selon la situation</h2>
+<div class="block">
+<p>Repérez votre situation : la ligne vous donne l'urgence, le premier geste et qui prévenir. Les coordonnées propres à votre structure sont <a href="#interlocuteurs">juste en dessous</a>.</p>
+<table>
+<thead><tr><th>Situation</th><th>Urgence</th><th>Premier geste</th><th>Qui prévenir</th></tr></thead>
+<tbody>
+<tr><td>Écran de rançon, fichiers illisibles</td><td>Immédiate</td><td>Débrancher le câble réseau, ne pas éteindre, ne pas payer</td><td>Référent ou prestataire informatique, puis responsable ; Practilio si le poste y était connecté ; dépôt de plainte</td></tr>
+<tr><td>Compte Practilio ou messagerie piraté</td><td>Immédiate</td><td>Changer le mot de passe depuis l'adresse habituelle, fermer les sessions</td><td><a href="#practilio">Practilio</a>, référent informatique, responsable</td></tr>
+<tr><td>Données de patients envoyées ou perdues</td><td>Dans la journée</td><td>Noter ce qui est parti, vers qui, combien de patients</td><td>Responsable ou DPO, qui décide de la notification CNIL (72 h)</td></tr>
+<tr><td>Automate, imagerie ou équipement médical anormal</td><td>Selon l'impact sur les soins</td><td>Appliquer la procédure dégradée, ne pas débrancher seul</td><td>Biomédical, fabricant, informatique ; ANSM si des résultats ont pu être faussés</td></tr>
+<tr><td>Message suspect reçu, sans clic</td><td>Sans urgence</td><td>Ne pas cliquer, le signaler, puis le supprimer</td><td>Référent informatique ; Practilio si le message imite Practilio</td></tr>
+<tr><td>Simple doute</td><td>Sans urgence</td><td>Demander avant d'agir</td><td>Référent informatique, ou <a href="https://www.cybermalveillance.gouv.fr/">Cybermalveillance.gouv.fr</a> sans référent</td></tr>
+</tbody></table>
+</div>
+</div>
+<div class="tab-panel" id="interlocuteurs">
+<h2>Vos interlocuteurs</h2>
+<section data-ctx="cabinet">
+<h3 data-no-ctx>Cabinet libéral</h3>
+<div class="block">
+<h4>D'abord</h4>
+<ul>
+<li>Votre prestataire informatique : c'est lui qui isole, analyse et remet en route. Gardez son numéro à portée de main, hors de l'ordinateur.</li>
+<li>Le médecin titulaire ou le gérant : c'est lui qui décide et qui fait les déclarations.</li>
+<li>Practilio, si votre compte ou vos rendez-vous sont touchés : voir <a href="#practilio">ci-dessus</a>.</li>
+</ul>
+<h4>Obligatoire</h4>
+<ul>
+<li>CNIL, sous 72 h : si des données de patients ont été volées, perdues ou consultées par quelqu'un d'autre, le cabinet doit notifier la violation dans les 72 heures après l'avoir découverte. Si le risque est élevé pour les patients, il doit aussi les prévenir. <a href="https://www.cnil.fr/fr/notifier-une-violation-de-donnees-personnelles">Notifier une violation</a></li>
+<li>Même sans notification, notez l'incident dans un registre interne : c'est aussi une obligation.</li>
+</ul>
+<h4>Recommandé</h4>
+<ul>
+<li>Porter plainte au commissariat ou à la gendarmerie : utile pour l'assurance et pour l'enquête.</li>
+<li>Cybermalveillance.gouv.fr / 17Cyber : diagnostic, conseils et mise en relation avec un prestataire de proximité. <a href="https://www.17cyber.gouv.fr/">17cyber.gouv.fr</a></li>
+<li>Le CSIRT de votre région : une équipe publique qui aide gratuitement à réagir. <a href="https://cyber.gouv.fr/csirt-territoriaux">Trouver le CSIRT de ma région</a></li>
+<li>Signalement à l'ARS sur le portail des signalements : facultatif pour un cabinet, mais il donne accès à l'appui du CERT Santé. <a href="https://signalement.social-sante.gouv.fr/">Portail de signalement</a></li>
+<li>L'Ordre des médecins, si l'incident porte atteinte au secret médical.</li>
+</ul>
+</div>
+</section>
+<section data-ctx="labo">
+<h3 data-no-ctx>Laboratoire de biologie</h3>
+<div class="block">
+<h4>D'abord</h4>
+<ul>
+<li>La DSI du groupe : elle isole les sites touchés et coordonne la réponse sur l'ensemble du réseau.</li>
+<li>Le biologiste-responsable : il décide de la continuité des analyses et du rendu des résultats.</li>
+<li>Le fabricant de l'automate, si un équipement d'analyse est en cause.</li>
+<li>Practilio, si la prise de rendez-vous ou la mise à disposition des résultats est touchée : voir <a href="#practilio">ci-dessus</a>.</li>
+</ul>
+<h4>Obligatoire</h4>
+<ul>
+<li>Signalement à l'ARS, sans délai, pour tout incident grave de sécurité du système d'information. Il se fait sur le portail des signalements et déclenche l'appui du CERT Santé. <a href="https://signalement.social-sante.gouv.fr/">Portail de signalement</a></li>
+<li>CNIL, sous 72 h, si des données de patients sont touchées. <a href="https://www.cnil.fr/fr/notifier-une-violation-de-donnees-personnelles">Notifier une violation</a></li>
+<li>ANSM (réactovigilance), si des résultats ont pu être faussés par un automate, un réactif ou un logiciel d'analyse. Prévenez aussi le fabricant.</li>
+<li>COFRAC, si l'incident remet en cause la maîtrise du système qualité sur lequel repose l'accréditation.</li>
+</ul>
+<h4>Recommandé</h4>
+<ul>
+<li>Porter plainte au commissariat ou à la gendarmerie.</li>
+<li>Le CSIRT de votre région, pour un appui de proximité. <a href="https://cyber.gouv.fr/csirt-territoriaux">Trouver le CSIRT de ma région</a></li>
+</ul>
+</div>
+</section>
+<section data-ctx="hopital">
+<h3 data-no-ctx>Hôpital public</h3>
+<div class="block">
+<h4>D'abord</h4>
+<ul>
+<li>La DSI et le RSSI de l'établissement (ou du GHT) : ils isolent, analysent et coordonnent la réponse.</li>
+<li>La direction, qui active si besoin la cellule de crise et les procédures dégradées.</li>
+<li>Le biomédical, si un équipement médical, l'imagerie ou un automate est en cause.</li>
+<li>Le DPO, dès que des données de patients sont touchées.</li>
+<li>Practilio, si la prise de rendez-vous, les notifications ou la téléconsultation sont touchées : voir <a href="#practilio">ci-dessus</a>.</li>
+</ul>
+<h4>Obligatoire</h4>
+<ul>
+<li>Signalement à l'ARS, sans délai, pour tout incident grave de sécurité du système d'information, sur le portail des signalements. Le CERT Santé apporte son appui. <a href="https://signalement.social-sante.gouv.fr/">Portail de signalement</a></li>
+<li>CNIL, sous 72 h, si des données de patients sont touchées. <a href="https://www.cnil.fr/fr/notifier-une-violation-de-donnees-personnelles">Notifier une violation</a></li>
+<li>ANSM, si un dispositif médical ou un automate de biologie a pu produire des résultats faux ou mettre des patients en danger. Prévenez aussi le fabricant.</li>
+<li>ANSSI, si l'hôpital est désigné opérateur de services essentiels ou d'importance vitale. <a href="https://www.cert.ssi.gouv.fr/">CERT-FR</a></li>
+</ul>
+<h4>Recommandé</h4>
+<ul>
+<li>Porter plainte au commissariat ou à la gendarmerie.</li>
+<li>Le GRADeS de votre région, relais de l'ARS pour le numérique en santé. <a href="https://esante.gouv.fr/faq/que-sont-les-groupements-regionaux-dappui-au-developpement-de-la-esante-grades">Qu'est-ce qu'un GRADeS ?</a></li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+
+    <p class="next-step">Étape suivante : <a href="ressources.html">Acteurs, prestataires, outils</a></p>
+  </main>
+  <footer class="site">Projet pédagogique EPITA · Practilio est une entreprise fictive · <a href="demarche.html">Démarche et sources</a></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

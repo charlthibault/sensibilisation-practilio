@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mes risques · Guide cyber Practilio</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <p class="disclaimer" role="note"><strong>Projet pédagogique EPITA.</strong> Practilio est une entreprise fictive : ce site n'est pas un service réel.</p>
+  <header class="site">
+    <a class="brand" href="index.html">Guide cyber Practilio</a>
+    <nav class="menu" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="risques.html" aria-current="page">Mes risques</a></li>
+      <li><a href="responsabilites.html">Qui fait quoi</a></li>
+      <li><a href="obligations.html">Mes obligations</a></li>
+      <li><a href="premiers-pas.html">Premiers pas</a></li>
+      <li><a href="evaluer.html">Vérifier mes réflexes</a></li>
+      <li><a href="incident.html">Incident : qui contacter</a></li>
+      <li><a href="ressources.html">Acteurs, prestataires, outils</a></li>
+    </ul>
+    </nav>
+    <p class="current-choice" id="current-choice"></p>
+  </header>
+  <main>
+<h1>Mes risques</h1>
+<p data-no-ctx>Choisissez votre contexte pour voir ce qui vous concerne :</p>
+<div class="selector">
+  <fieldset><legend>Je travaille dans…</legend>
+    <button type="button" data-pick-ctx="cabinet">Un cabinet libéral (2 à 5 médecins)</button>
+    <button type="button" data-pick-ctx="labo">Un laboratoire de biologie multi-sites</button>
+    <button type="button" data-pick-ctx="hopital">Un hôpital public</button>
+  </fieldset>
+</div>
+
+<div class="tabs" data-tabs>
+<div class="tab-list" aria-label="Sections de la page">
+  <a href="#definitions" data-tab="definitions">Définitions</a>
+  <a href="#actifs" data-tab="actifs">Mes actifs</a>
+  <a href="#matrice" data-tab="matrice">Matrice des menaces</a>
+</div>
+<div class="tab-panel" id="definitions">
+<section id="vocabulaire">
+<h2>Quelques mots pour comprendre le risque</h2>
+<div class="block">
+<p>Une cyberattaque suit presque toujours le même enchaînement. Quelques mots suffisent pour le décrire.</p>
+<ul>
+<li><strong>Menace</strong> : ce qui peut provoquer un incident. Une menace a une source (un cybercriminel, un ancien salarié, mais aussi une simple erreur), une motivation (gagner de l'argent, se venger, espionner, la curiosité… ou aucune, quand il s'agit d'une erreur) et un mode d'attaque (hameçonnage, rançongiciel, vol de matériel…).</li>
+<li><strong>Vecteur</strong> : le chemin utilisé pour atteindre la cible : un faux email, une clé USB piégée, un mot de passe volé, un accès à distance laissé ouvert, un prestataire…</li>
+<li><strong>Vulnérabilité</strong> : la faiblesse qui permet à l'attaque de réussir. Elle peut être technique (logiciel pas à jour, mauvais réglage) ou humaine (manque de vigilance, habitudes risquées comme réutiliser le même mot de passe).</li>
+<li><strong>Actif</strong> : ce dont l'activité ne peut pas se passer : les dossiers patients, l'agenda, les postes, les équipements médicaux.</li>
+<li><strong>Impact</strong> : les conséquences pour la cible : activité à l'arrêt, pertes financières, sanctions, réputation abîmée et, au bout du compte, des patients mis en danger.</li>
+<li><strong>Risque</strong> : le risque combine deux questions : est-ce que cela a des chances d'arriver chez moi (la vraisemblance), et à quel point ce serait grave (la gravité) ? Un risque élevé est à traiter en premier.</li>
+</ul>
+<p>On parle aussi de <strong>surface d'attaque</strong> : c'est l'ensemble des portes d'entrée possibles (ordinateurs, téléphones, comptes, logiciels, prestataires, personnes). Plus elle est grande, plus l'attaquant a de chances de trouver une porte mal fermée.</p>
+<h4>Un exemple</h4>
+<blockquote>
+<ul>
+<li>Contexte : cabinet médical libéral</li>
+</ul>
+</blockquote>
+<table>
+<thead><tr><th>Menace</th><th>Vecteur</th><th>Vulnérabilité</th><th>Actif</th><th>Impact</th></tr></thead>
+<tbody>
+<tr><td>Un cybercriminel qui veut revendre des données (source, motivation) vole des identifiants par hameçonnage (mode d'attaque)</td><td>Un faux email aux couleurs de Practilio qui demande de se reconnecter</td><td>Pas de double authentification, et le même mot de passe utilisé partout</td><td>Les comptes Practilio et les dossiers patients</td><td>Les dossiers patients sont volés et le cabinet doit s'arrêter</td></tr>
+</tbody></table>
+</div>
+</section>
+
+<section id="qui-attaque">
+<h2>Qui peut s'en prendre à vous, et pourquoi</h2>
+<div class="block">
+<p>Une menace, c'est d'abord quelqu'un (ou quelque chose) avec une raison d'agir. Toutes ne cherchent pas à nuire : une erreur ou un oubli peut faire autant de dégâts qu'une attaque.</p>
+<table>
+<thead><tr><th>Source</th><th>Ce qui la motive</th><th>Ce qu'elle fait le plus souvent</th><th>Cabinet</th><th>Laboratoire</th><th>Hôpital</th></tr></thead>
+<tbody>
+<tr><td>Cybercriminel opportuniste</td><td>Gagner de l'argent</td><td>Hameçonnage envoyé en masse, recherche d'accès mal protégés</td><td>Probable</td><td>Probable</td><td>Probable</td></tr>
+<tr><td>Groupe de rançongiciel organisé</td><td>Gagner de l'argent (rançon, revente des données)</td><td>Rançongiciel, souvent après un vol de compte ou par un prestataire</td><td>Possible</td><td>Probable</td><td>Probable</td></tr>
+<tr><td>Ancien salarié</td><td>Rancune, intérêt personnel</td><td>Accès illégitime avec un compte qui n'a pas été retiré</td><td>Peu probable</td><td>Possible</td><td>Possible</td></tr>
+<tr><td>Personnel en poste</td><td>Curiosité, sans intention de nuire</td><td>Consultation de dossiers sans raison médicale</td><td>Peu probable</td><td>Possible</td><td>Probable</td></tr>
+<tr><td>Hacktiviste</td><td>Idéologie, se faire entendre</td><td>Saturation ou défiguration d'un site internet</td><td>Peu probable</td><td>Peu probable</td><td>Possible</td></tr>
+<tr><td>Acteur étatique</td><td>Espionnage, déstabilisation</td><td>Intrusion ciblée et discrète, sur la durée</td><td>Peu probable</td><td>Peu probable</td><td>Possible</td></tr>
+<tr><td>Erreur ou négligence (personnel, prestataire)</td><td>Aucune : gagner du temps, inattention</td><td>Fuite de données par erreur, perte de matériel, mauvais réglage</td><td>Probable</td><td>Probable</td><td>Probable</td></tr>
+</tbody></table>
+</div>
+</section>
+</div>
+<div class="tab-panel" id="actifs">
+<section id="contexte">
+<h2>Dans votre structure</h2>
+<section data-ctx="cabinet">
+<h3 data-no-ctx>Cabinet libéral</h3>
+<div class="block">
+<p>Un cabinet de deux à cinq médecins avec un secrétariat, comme la majorité des utilisateurs de Practilio. Personne n'y est chargé de la sécurité : un informaticien extérieur intervient sur rendez-vous, souvent à distance.</p>
+<p>Ce sans quoi le cabinet ne peut plus recevoir ses patients :</p>
+<ul>
+<li>Les dossiers des patients (antécédents, comptes rendus, ordonnances, notes), stockés dans Practilio.</li>
+<li>L'agenda et les coordonnées des patients : sans lui, le secrétariat ne sait plus qui vient ni qui prévenir.</li>
+<li>Les comptes des médecins et du secrétariat, sur Practilio et sur la messagerie. Les données étant hébergées chez Practilio, ce sont surtout ces accès qu'il faut protéger côté cabinet.</li>
+<li>Le poste de l'accueil et les portables des médecins, qui sortent du cabinet avec une session Practilio souvent ouverte.</li>
+<li>L'accès à distance du prestataire, qui donne la main sur tout le parc.</li>
+</ul>
+<p>Pas d'équipement OT : le risque porte sur les postes, les comptes et les services en ligne.</p>
+</div>
+</section>
+<section data-ctx="labo">
+<h3 data-no-ctx>Laboratoire de biologie</h3>
+<div class="block">
+<p>Un laboratoire réparti sur plusieurs sites de prélèvement, avec un plateau technique qui centralise les analyses. Une équipe informatique gère le réseau entre les sites ; les fabricants assurent la maintenance des automates, à distance.</p>
+<p>Ce sans quoi le laboratoire ne peut plus rendre de résultats :</p>
+<h4>Informatique (IT)</h4>
+<ul>
+<li>Les résultats d'analyses, transmis aux prescripteurs et mis à disposition des patients.</li>
+<li>Le logiciel du laboratoire (SIL) et la plateforme de résultats, reliée à Practilio.</li>
+<li>Le réseau entre les sites.</li>
+<li>Les comptes du personnel, nombreux et répartis sur tous les sites.</li>
+<li>L'agenda des prélèvements et les rappels envoyés par Practilio.</li>
+</ul>
+<h4>Équipements (OT)</h4>
+<ul>
+<li>Les automates d'analyse et leur middleware. Si le plateau technique s'arrête, tous les sites s'arrêtent avec lui.</li>
+<li>La supervision des enceintes réfrigérées : un échantillon mal conservé est perdu et le prélèvement est à refaire.</li>
+<li>Les accès de télémaintenance des fabricants.</li>
+</ul>
+</div>
+</section>
+<section data-ctx="hopital">
+<h3 data-no-ctx>Hôpital public</h3>
+<div class="block">
+<p>Un hôpital public de taille moyenne, avec une DSI interne, un service biomédical et de nombreux prestataires qui maintiennent des équipements critiques pour les soins.</p>
+<p>Ce sans quoi l'hôpital ne peut plus soigner normalement :</p>
+<h4>Informatique (IT)</h4>
+<ul>
+<li>Le dossier patient informatisé, qui suit le patient d'un service à l'autre.</li>
+<li>Les résultats de biologie et les images, dont dépendent les décisions médicales.</li>
+<li>L'annuaire des comptes (Active Directory), très nombreux : soignants, administratifs, intérimaires, prestataires. C'est, avec les sauvegardes, la première cible d'un rançongiciel.</li>
+<li>Les sauvegardes, qui permettent de redémarrer après une attaque.</li>
+<li>Les rendez-vous et la téléconsultation, gérés avec Practilio, et les interconnexions avec le GHT.</li>
+</ul>
+<h4>Équipements (OT)</h4>
+<ul>
+<li>Les équipements biomédicaux connectés : imagerie (radiologie, scanner), automates de biologie, monitoring.</li>
+<li>La gestion technique du bâtiment : chauffage, ventilation, électricité.</li>
+<li>La centrale de fluides médicaux (oxygène, vide, air médical).</li>
+<li>Les accès de télémaintenance des fabricants, souvent ouverts en permanence.</li>
+</ul>
+</div>
+</section>
+</section>
+</div>
+<div class="tab-panel" id="matrice">
+<section id="vue-ensemble">
+<h2>Mes menaces</h2>
+<div class="block">
+<p>Chaque ligne est un type d'attaque, chaque colonne un type de structure (la vôtre est surlignée). Cliquez sur une case pour voir le détail : qui est derrière, par où ça passe, pourquoi ça marche chez vous et ce que ça coûte.</p>
+<p>Niveau de risque (vraisemblance × gravité) : 🔴 critique · 🟠 élevé · 🟡 modéré · ⚪ faible · — ne vous concerne pas. Par quoi commencer : voir <a href="ressources.html#prioriser">les priorités</a>.</p>
+</div>
+<div class="matrix-wrap">
+<p class="matrix-compare"><button type="button" data-matrix-compare aria-pressed="false" hidden>Comparer les 3 structures</button></p>
+<table class="matrix">
+<caption>Niveau de risque (vraisemblance × gravité) de chaque type d'attaque selon la structure. Cliquez sur une case pour voir le détail.</caption>
+<thead><tr><th scope="col">Type d'attaque</th><th scope="col" data-col="cabinet">Cabinet libéral</th><th scope="col" data-col="labo">Laboratoire de biologie</th><th scope="col" data-col="hopital">Hôpital public</th></tr></thead>
+<tbody>
+<tr><th scope="row">Hameçonnage, compromission de comptes</th><td data-col="cabinet"><a class="cell" href="#menace-cabinet-hameconnage" aria-label="Hameçonnage, compromission de comptes, Cabinet libéral : Élevé"><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span></a></td><td data-col="labo"><a class="cell" href="#menace-labo-hameconnage" aria-label="Hameçonnage, compromission de comptes, Laboratoire de biologie : Critique"><span class="level level-critique"><span aria-hidden="true">🔴</span> Critique</span></a></td><td data-col="hopital"><a class="cell" href="#menace-hopital-hameconnage" aria-label="Hameçonnage, compromission de comptes, Hôpital public : Élevé"><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span></a></td></tr>
+<tr><th scope="row">Rançongiciel</th><td data-col="cabinet"><a class="cell" href="#menace-cabinet-rancongiciel" aria-label="Rançongiciel, Cabinet libéral : Modéré"><span class="level level-modere"><span aria-hidden="true">🟡</span> Modéré</span></a></td><td data-col="labo"><a class="cell" href="#menace-labo-rancongiciel" aria-label="Rançongiciel, Laboratoire de biologie : Critique"><span class="level level-critique"><span aria-hidden="true">🔴</span> Critique</span></a></td><td data-col="hopital"><a class="cell" href="#menace-hopital-rancongiciel" aria-label="Rançongiciel, Hôpital public : Critique"><span class="level level-critique"><span aria-hidden="true">🔴</span> Critique</span></a></td></tr>
+<tr><th scope="row">Attaque par rebond via un prestataire</th><td data-col="cabinet"><a class="cell" href="#menace-cabinet-prestataire" aria-label="Attaque par rebond via un prestataire, Cabinet libéral : Élevé"><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span></a></td><td data-col="labo"><a class="cell" href="#menace-labo-prestataire" aria-label="Attaque par rebond via un prestataire, Laboratoire de biologie : Élevé"><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span></a></td><td data-col="hopital"><a class="cell" href="#menace-hopital-prestataire" aria-label="Attaque par rebond via un prestataire, Hôpital public : Élevé"><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span></a></td></tr>
+<tr><th scope="row">Accès illégitime aux dossiers</th><td data-col="cabinet"><a class="cell" href="#menace-cabinet-acces-illegitime" aria-label="Accès illégitime aux dossiers, Cabinet libéral : Faible"><span class="level level-faible"><span aria-hidden="true">⚪</span> Faible</span></a></td><td data-col="labo"><a class="cell" href="#menace-labo-acces-illegitime" aria-label="Accès illégitime aux dossiers, Laboratoire de biologie : Élevé"><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span></a></td><td data-col="hopital"><a class="cell" href="#menace-hopital-acces-illegitime" aria-label="Accès illégitime aux dossiers, Hôpital public : Critique"><span class="level level-critique"><span aria-hidden="true">🔴</span> Critique</span></a></td></tr>
+<tr><th scope="row">Fuite de données par erreur</th><td data-col="cabinet"><a class="cell" href="#menace-cabinet-fuite" aria-label="Fuite de données par erreur, Cabinet libéral : Élevé"><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span></a></td><td data-col="labo"><a class="cell" href="#menace-labo-fuite" aria-label="Fuite de données par erreur, Laboratoire de biologie : Élevé"><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span></a></td><td data-col="hopital"><a class="cell" href="#menace-hopital-fuite" aria-label="Fuite de données par erreur, Hôpital public : Élevé"><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span></a></td></tr>
+<tr><th scope="row">Perte ou vol de matériel</th><td data-col="cabinet"><a class="cell" href="#menace-cabinet-perte-materiel" aria-label="Perte ou vol de matériel, Cabinet libéral : Élevé"><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span></a></td><td data-col="labo"><a class="cell" href="#menace-labo-perte-materiel" aria-label="Perte ou vol de matériel, Laboratoire de biologie : Modéré"><span class="level level-modere"><span aria-hidden="true">🟡</span> Modéré</span></a></td><td data-col="hopital"><a class="cell" href="#menace-hopital-perte-materiel" aria-label="Perte ou vol de matériel, Hôpital public : Modéré"><span class="level level-modere"><span aria-hidden="true">🟡</span> Modéré</span></a></td></tr>
+<tr><th scope="row">Attaque sur les équipements connectés (OT)</th><td data-col="cabinet"><a class="cell" href="#menace-cabinet-ot" aria-label="Attaque sur les équipements connectés (OT), Cabinet libéral : Non concerné"><span class="level level-na"><span aria-hidden="true">—</span> Non concerné</span></a></td><td data-col="labo"><a class="cell" href="#menace-labo-ot" aria-label="Attaque sur les équipements connectés (OT), Laboratoire de biologie : Modéré"><span class="level level-modere"><span aria-hidden="true">🟡</span> Modéré</span></a></td><td data-col="hopital"><a class="cell" href="#menace-hopital-ot" aria-label="Attaque sur les équipements connectés (OT), Hôpital public : Critique"><span class="level level-critique"><span aria-hidden="true">🔴</span> Critique</span></a></td></tr>
+</tbody>
+</table>
+</div>
+<div class="threat-panel" id="threat-panel" role="region" aria-labelledby="threat-panel-title" hidden>
+<div class="threat-panel-head"><h3 id="threat-panel-title" tabindex="-1"></h3><button type="button" class="threat-panel-close" aria-label="Fermer le détail">✕</button></div>
+<div class="threat-panel-body block"></div>
+</div>
+<div class="threat-cards">
+<h3>Cabinet libéral</h3>
+<details class="threat" id="menace-cabinet-hameconnage" data-ctx-label="Cabinet libéral" data-title="Hameçonnage et compromission de comptes">
+<summary><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span> Hameçonnage et compromission de comptes</summary>
+<div class="block">
+<p>Un cybercriminel opportuniste, qui revend ensuite les accès ou les données, envoie un faux email (par exemple aux couleurs de Practilio) pour faire saisir un identifiant et un mot de passe sur un faux site.</p>
+<p>Pourquoi chez vous : la double authentification n'est souvent pas activée, certains comptes sont partagés, et personne n'est chargé de repérer les messages suspects.</p>
+<p>Conséquences : les dossiers de toute la patientèle peuvent être consultés ou volés depuis un compte légitime, ce qui oblige le cabinet à <a href="obligations.html">notifier la CNIL</a> et entame la confiance des patients.</p>
+</div>
+</details>
+<details class="threat" id="menace-cabinet-prestataire" data-ctx-label="Cabinet libéral" data-title="Attaque par rebond via un prestataire">
+<summary><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span> Attaque par rebond via un prestataire</summary>
+<div class="block">
+<p>Un cybercriminel passe par l'accès à distance de votre prestataire informatique, ou par le prestataire lui-même s'il a été piraté.</p>
+<p>Pourquoi chez vous : un seul prestataire détient tous les droits d'administration, et son logiciel de prise en main à distance reste souvent ouvert en permanence.</p>
+<p>Conséquences : l'attaquant a les mêmes droits que votre informaticien. Il peut bloquer tout le cabinet et lire ce qui est stocké sur les postes. Le même prestataire gère souvent d'autres cabinets, touchés en même temps.</p>
+</div>
+</details>
+<details class="threat" id="menace-cabinet-fuite" data-ctx-label="Cabinet libéral" data-title="Fuite de données par erreur">
+<summary><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span> Fuite de données par erreur</summary>
+<div class="block">
+<p>Personne ne cherche à nuire : une ordonnance part au mauvais destinataire, un compte rendu est envoyé depuis une messagerie personnelle ou collé dans un assistant d'IA grand public.</p>
+<p>Pourquoi chez vous : pas de messagerie sécurisée de santé utilisée au quotidien, des demandes de patients par email à traiter vite, et aucune règle écrite sur les outils autorisés.</p>
+<p>Conséquences : atteinte au secret médical et violation de données à <a href="obligations.html">signaler à la CNIL</a>.</p>
+</div>
+</details>
+<details class="threat" id="menace-cabinet-perte-materiel" data-ctx-label="Cabinet libéral" data-title="Perte ou vol de matériel">
+<summary><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span> Perte ou vol de matériel</summary>
+<div class="block">
+<p>Un portable ou un téléphone professionnel est perdu ou volé, au cabinet, en visite à domicile ou dans les transports.</p>
+<p>Pourquoi chez vous : les appareils ne sont pas toujours chiffrés, les sessions Practilio restent ouvertes et des mots de passe sont enregistrés dans le navigateur.</p>
+<p>Conséquences : la personne qui trouve l'appareil accède aux documents et aux comptes encore connectés. C'est une violation de données à <a href="obligations.html">signaler à la CNIL</a>.</p>
+</div>
+</details>
+<details class="threat" id="menace-cabinet-rancongiciel" data-ctx-label="Cabinet libéral" data-title="Rançongiciel">
+<summary><span class="level level-modere"><span aria-hidden="true">🟡</span> Modéré</span> Rançongiciel</summary>
+<div class="block">
+<p>Un groupe cybercriminel chiffre les fichiers des postes et demande une rançon, parfois en menaçant aussi de publier les données.</p>
+<p>Pourquoi le niveau est modéré : le cabinet a peu de postes, l'agenda et les dossiers gérés dans Practilio restent accessibles depuis un autre appareil, et les consultations peuvent continuer quelque temps sur papier. Le point faible reste les sauvegardes des postes, rarement testées.</p>
+<p>Conséquences : quelques jours de fonctionnement dégradé, des frais de remise en état, et la perte des documents qui n'existaient que sur les postes.</p>
+</div>
+</details>
+<details class="threat" id="menace-cabinet-acces-illegitime" data-ctx-label="Cabinet libéral" data-title="Accès illégitime aux dossiers">
+<summary><span class="level level-faible"><span aria-hidden="true">⚪</span> Faible</span> Accès illégitime aux dossiers</summary>
+<div class="block">
+<p>Un ancien salarié qui peut encore se connecter, ou une personne en poste qui ouvre un dossier par curiosité.</p>
+<p>Pourquoi le niveau est faible : l'équipe est petite, chacun connaît les patients qu'il suit, et les départs sont rares. Le point d'attention est un mot de passe partagé qui n'est pas changé après un départ.</p>
+<p>Conséquences, si cela arrive : atteinte au secret médical, dont le cabinet reste responsable.</p>
+</div>
+</details>
+<details class="threat" id="menace-cabinet-ot" data-ctx-label="Cabinet libéral" data-title="Attaque sur les équipements connectés (OT)">
+<summary><span class="level level-na"><span aria-hidden="true">—</span> Non concerné</span> Attaque sur les équipements connectés (OT)</summary>
+<div class="block">
+<p>Ne vous concerne pas : un cabinet libéral n'a en général aucun équipement médical ou technique relié à son réseau.</p>
+</div>
+</details>
+<h3>Laboratoire de biologie</h3>
+<details class="threat" id="menace-labo-hameconnage" data-ctx-label="Laboratoire de biologie" data-title="Hameçonnage et compromission de comptes">
+<summary><span class="level level-critique"><span aria-hidden="true">🔴</span> Critique</span> Hameçonnage et compromission de comptes</summary>
+<div class="block">
+<p>Un cybercriminel vole des identifiants par un faux email, pour revendre les données ou préparer un rançongiciel à partir du compte volé.</p>
+<p>Pourquoi chez vous : beaucoup de personnes sur plusieurs sites, donc beaucoup de comptes. Un seul compte volé peut ouvrir la plateforme de résultats, reliée à Practilio.</p>
+<p>Conséquences : les résultats d'analyses des patients de tous les sites peuvent être consultés ou volés, avec une <a href="obligations.html">notification à la CNIL</a> et une atteinte à l'image du laboratoire et du groupe.</p>
+</div>
+</details>
+<details class="threat" id="menace-labo-rancongiciel" data-ctx-label="Laboratoire de biologie" data-title="Rançongiciel">
+<summary><span class="level level-critique"><span aria-hidden="true">🔴</span> Critique</span> Rançongiciel</summary>
+<div class="block">
+<p>Un groupe cybercriminel organisé chiffre les systèmes et demande une rançon.</p>
+<p>Pourquoi chez vous : les analyses sont centralisées. Si le plateau technique s'arrête, aucun site ne peut plus rendre de résultats, et le réseau qui relie les sites permet à l'attaque de se propager.</p>
+<p>Conséquences : tous les sites arrêtés en même temps, des résultats retardés, des examens à refaire et des prises en charge ralenties.</p>
+</div>
+</details>
+<details class="threat" id="menace-labo-prestataire" data-ctx-label="Laboratoire de biologie" data-title="Attaque par rebond via un prestataire">
+<summary><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span> Attaque par rebond via un prestataire</summary>
+<div class="block">
+<p>Un cybercriminel passe par l'accès d'un prestataire, par exemple celui qui assure la maintenance à distance des automates.</p>
+<p>Pourquoi chez vous : plusieurs prestataires interviennent, avec des accès à distance entrants sur le réseau des équipements d'analyse.</p>
+<p>Conséquences : automates indisponibles et analyses retardées.</p>
+</div>
+</details>
+<details class="threat" id="menace-labo-acces-illegitime" data-ctx-label="Laboratoire de biologie" data-title="Accès illégitime aux dossiers">
+<summary><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span> Accès illégitime aux dossiers</summary>
+<div class="block">
+<p>Un ancien salarié dont l'accès n'a pas été retiré, ou une personne en poste qui consulte par curiosité les résultats d'un proche.</p>
+<p>Pourquoi chez vous : le personnel tourne entre les sites, beaucoup de personnes ont accès aux résultats, et un départ n'entraîne pas toujours la suppression des accès sur toutes les applications.</p>
+<p>Conséquences : atteinte au secret médical, dont le laboratoire répond.</p>
+</div>
+</details>
+<details class="threat" id="menace-labo-fuite" data-ctx-label="Laboratoire de biologie" data-title="Fuite de données par erreur">
+<summary><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span> Fuite de données par erreur</summary>
+<div class="block">
+<p>Personne ne cherche à nuire : un résultat part au mauvais patient ou au mauvais prescripteur, un fichier passe par une messagerie personnelle ou un outil d'IA grand public.</p>
+<p>Pourquoi chez vous : un très grand nombre de résultats transmis chaque jour, à des destinataires différents, souvent par envoi automatique.</p>
+<p>Conséquences : atteinte au secret médical, violation de données à <a href="obligations.html">signaler à la CNIL</a>, perte de confiance des patients et des prescripteurs.</p>
+</div>
+</details>
+<details class="threat" id="menace-labo-perte-materiel" data-ctx-label="Laboratoire de biologie" data-title="Perte ou vol de matériel">
+<summary><span class="level level-modere"><span aria-hidden="true">🟡</span> Modéré</span> Perte ou vol de matériel</summary>
+<div class="block">
+<p>Un portable, une tablette ou un téléphone professionnel est perdu ou volé, par exemple entre deux sites.</p>
+<p>Pourquoi le niveau est modéré : la plupart des postes restent fixes. Le risque porte sur les appareils mobiles, pas toujours chiffrés ni gérés à distance.</p>
+<p>Conséquences : des données accessibles à la personne qui trouve l'appareil, et une violation de données à <a href="obligations.html">signaler à la CNIL</a>.</p>
+</div>
+</details>
+<details class="threat" id="menace-labo-ot" data-ctx-label="Laboratoire de biologie" data-title="Attaque sur les équipements connectés (OT)">
+<summary><span class="level level-modere"><span aria-hidden="true">🟡</span> Modéré</span> Attaque sur les équipements connectés (OT)</summary>
+<div class="block">
+<p>En général, un cybercriminel dont l'attaque se propage du réseau informatique vers les automates d'analyse ou la supervision de la chaîne du froid, sans les viser en premier.</p>
+<p>Pourquoi chez vous : ces équipements sont connectés, difficiles à mettre à jour et maintenus à distance par les fabricants.</p>
+<p>Conséquences : des résultats faussés ou des échantillons perdus, donc des prélèvements à refaire, et des analyses interrompues.</p>
+</div>
+</details>
+<h3>Hôpital public</h3>
+<details class="threat" id="menace-hopital-rancongiciel" data-ctx-label="Hôpital public" data-title="Rançongiciel">
+<summary><span class="level level-critique"><span aria-hidden="true">🔴</span> Critique</span> Rançongiciel</summary>
+<div class="block">
+<p>Un groupe cybercriminel organisé chiffre les systèmes et demande une rançon.</p>
+<p>Pourquoi chez vous : un système d'information très étendu, dont dépendent presque tous les services de soins.</p>
+<p>Conséquences : passage en mode dégradé, retour au papier, soins et opérations reportés, et des coûts de remise en état très élevés.</p>
+</div>
+</details>
+<details class="threat" id="menace-hopital-acces-illegitime" data-ctx-label="Hôpital public" data-title="Accès illégitime aux dossiers">
+<summary><span class="level level-critique"><span aria-hidden="true">🔴</span> Critique</span> Accès illégitime aux dossiers</summary>
+<div class="block">
+<p>Surtout une personne en poste qui consulte, par curiosité, le dossier d'un proche, d'un collègue ou d'une personnalité, ou quelqu'un qui n'a plus le droit d'y accéder.</p>
+<p>Pourquoi chez vous : un grand nombre de personnes ont accès aux dossiers, et intérimaires et internes changent souvent de service.</p>
+<p>Conséquences : atteinte au secret médical, et c'est l'établissement qui est sanctionné, pas seulement la personne.</p>
+</div>
+</details>
+<details class="threat" id="menace-hopital-ot" data-ctx-label="Hôpital public" data-title="Attaque sur les équipements connectés (OT)">
+<summary><span class="level level-critique"><span aria-hidden="true">🔴</span> Critique</span> Attaque sur les équipements connectés (OT)</summary>
+<div class="block">
+<p>Le plus souvent, un cybercriminel dont l'attaque se propage du réseau informatique vers les équipements biomédicaux (imagerie, automates) ou techniques (fluides médicaux, chauffage et ventilation, contrôle d'accès).</p>
+<p>Pourquoi chez vous : de nombreux équipements connectés, souvent anciens, difficiles à mettre à jour et maintenus à distance par des prestataires.</p>
+<p>Conséquences : une atteinte directe à la sécurité des patients (examens impossibles, résultats faux) et des services d'imagerie ou de biologie à l'arrêt.</p>
+</div>
+</details>
+<details class="threat" id="menace-hopital-hameconnage" data-ctx-label="Hôpital public" data-title="Hameçonnage et compromission de comptes">
+<summary><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span> Hameçonnage et compromission de comptes</summary>
+<div class="block">
+<p>Un cybercriminel vole des identifiants par un faux email, pour revendre les données ou préparer un rançongiciel.</p>
+<p>Pourquoi chez vous : la double authentification et la surveillance sont plus probables qu'en cabinet, mais sur des milliers de comptes, il en suffit d'un.</p>
+<p>Conséquences : extraction massive de dossiers depuis le dossier patient ou la messagerie, et <a href="obligations.html">notification à la CNIL</a>.</p>
+</div>
+</details>
+<details class="threat" id="menace-hopital-prestataire" data-ctx-label="Hôpital public" data-title="Attaque par rebond via un prestataire">
+<summary><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span> Attaque par rebond via un prestataire</summary>
+<div class="block">
+<p>Un cybercriminel passe par l'accès d'un prestataire de maintenance.</p>
+<p>Pourquoi chez vous : de nombreux intervenants extérieurs, et des connexions ouvertes pour eux puis oubliées.</p>
+<p>Conséquences : applications ou équipements indisponibles, et un accès possible aux données et aux équipements médicaux.</p>
+</div>
+</details>
+<details class="threat" id="menace-hopital-fuite" data-ctx-label="Hôpital public" data-title="Fuite de données par erreur">
+<summary><span class="level level-eleve"><span aria-hidden="true">🟠</span> Élevé</span> Fuite de données par erreur</summary>
+<div class="block">
+<p>Personne ne cherche à nuire : un compte rendu part au mauvais destinataire, passe par une messagerie personnelle, ou est dicté dans un outil d'IA grand public.</p>
+<p>Pourquoi chez vous : un très grand nombre de personnes manipulent des données de santé, avec des pratiques différentes d'un service à l'autre.</p>
+<p>Conséquences : atteinte au secret médical et violation de données à <a href="obligations.html">signaler à la CNIL</a>.</p>
+</div>
+</details>
+<details class="threat" id="menace-hopital-perte-materiel" data-ctx-label="Hôpital public" data-title="Perte ou vol de matériel">
+<summary><span class="level level-modere"><span aria-hidden="true">🟡</span> Modéré</span> Perte ou vol de matériel</summary>
+<div class="block">
+<p>Un portable, une tablette de soins ou un téléphone professionnel est perdu ou volé.</p>
+<p>Pourquoi le niveau est modéré : le parc est en général géré par la DSI (chiffrement, blocage à distance), mais beaucoup d'appareils mobiles circulent entre les services.</p>
+<p>Conséquences : des données accessibles à la personne qui trouve l'appareil, et une violation de données à <a href="obligations.html">signaler à la CNIL</a>.</p>
+</div>
+</details>
+</div>
+</section>
+
+<section id="exemples">
+<h2>Ça s'est vraiment passé</h2>
+<div class="block">
+<p>Ces attaques ont réellement touché des acteurs de santé, dont des éditeurs de logiciels comparables à Practilio. Chaque fiche indique son statut :</p>
+<ul>
+<li><strong>Confirmé</strong> : la victime ou une autorité a reconnu les faits.</li>
+<li><strong>Revendiqué</strong> : un attaquant l'affirme, sans confirmation à ce jour. Les chiffres annoncés servent souvent à faire pression.</li>
+</ul>
+</div>
+<section data-ctx="cabinet">
+<h3 data-no-ctx>Cabinet libéral</h3>
+<div class="block">
+<blockquote>
+<p>Dans un cabinet, l'attaquant ne vise pas votre cabinet en particulier : il cherche un compte facile à prendre. Sans personne chargée de la sécurité, tout se joue sur le mot de passe de chaque médecin, le poste de l'accueil et l'accès à distance de votre informaticien.</p>
+</blockquote>
+</div>
+<div class="carousel" role="region" aria-roledescription="carrousel" aria-label="Attaques réelles, Cabinet libéral">
+<div class="carousel-track" tabindex="0">
+<article class="attack" id="attaque-cabinet-1" aria-roledescription="fiche" aria-label="1 sur 2">
+<h4>Cegedim : des comptes de médecins utilisés pour aspirer des dossiers patients</h4>
+<blockquote>
+<p><span class="status status-confirme">Confirmé</span> · Fin 2025 · France</p>
+<p><strong>1 500 comptes de médecins utilisés, 11 à 15 millions de dossiers estimés</strong></p>
+</blockquote>
+<p>Voir dans la matrice : <a href="#menace-cabinet-hameconnage">Hameçonnage et compromission de comptes</a></p>
+<p>Menace : attaquant non identifié · Vecteur : des comptes de médecins, avec des identifiants probablement volés</p>
+<p>Ce qui s'est passé : des requêtes anormales sont parties des comptes de 1 500 médecins utilisateurs d'un logiciel de cabinet, MonLogicielMedical. Des dossiers patients ont été extraits, y compris les notes libres des médecins.</p>
+<p>Dans votre cabinet : c'est votre logiciel de tous les jours, et ce sont des médecins comme vous dont les comptes ont servi. Les attaquants se sont simplement connectés avec ces comptes. Un portable de médecin infecté ou un mot de passe réutilisé suffit, et ce sont les dossiers de toute votre patientèle qui partent. C'est ensuite au cabinet de prévenir la CNIL.</p>
+<details>
+<summary>Sources et détails</summary>
+<ul>
+<li>Hypothèse dominante, non confirmée : identifiants volés (logiciel espion, hameçonnage, absence de double authentification).</li>
+<li>Ampleur estimée par France 2 : 11 à 15 millions de patients.</li>
+<li>Sources : <a href="https://www.caducee.net/actualite-medicale/16821/incident-mlm-chez-cegedim-anatomie-d-une-fuite-de-donnees-estimee-a-11-15-millions-de-dossiers-patients.html">Caducée</a>, <a href="https://www.lemondeinformatique.fr/actualites/lire-le-piratage-du-logiciel-medical-de-cegedim-refait-surface-99493.html">Le Monde Informatique</a></li>
+</ul>
+</details>
+</article>
+<article class="attack" id="attaque-cabinet-2" aria-roledescription="fiche" aria-label="2 sur 2">
+<h4>Doctolib : des rendez-vous volés via des logiciels connectés</h4>
+<blockquote>
+<p><span class="status status-confirme">Confirmé</span> · Juillet 2020 · France</p>
+<p><strong>6 128 rendez-vous volés</strong></p>
+</blockquote>
+<p>Voir dans la matrice : <a href="#menace-cabinet-prestataire">Attaque par rebond via un prestataire</a></p>
+<p>Menace : attaquant non identifié · Vecteur : des logiciels tiers connectés à la plateforme</p>
+<p>Ce qui s'est passé : en passant par des logiciels tiers connectés à la plateforme, des attaquants ont récupéré les données de 6 128 rendez-vous : nom, téléphone, email, date du rendez-vous, nom et spécialité du praticien.</p>
+<p>Dans votre cabinet : vous reliez souvent plusieurs outils entre eux : agenda, logiciel médical, Practilio. Chaque connexion est une porte d'entrée que vous ne surveillez pas vous-même. Et même sans dossier médical, la liste de vos rendez-vous révèle des informations de santé (spécialité, fréquence des consultations).</p>
+<details>
+<summary>Sources et détails</summary>
+<ul>
+<li>Accès illégal par l'interface utilisée par des logiciels tiers connectés à la plateforme.</li>
+<li>Sources : <a href="https://next.ink/brief_article/doctolib-sest-fait-derober-les-informations-administratives-de-6-128-rendez-vous/">Next</a>, <a href="https://cardiologie.lequotidiendumedecin.fr/liberal/gestion-cabinet/doctolib-victime-dun-vol-de-donnees-portant-sur-plus-de-6-000-rendez-vous">Le Quotidien du Médecin</a></li>
+</ul>
+</details>
+</article>
+</div>
+<div class="carousel-nav" hidden>
+<button type="button" class="carousel-prev" aria-label="Attaque précédente">‹</button>
+<span class="carousel-count" aria-live="polite"></span>
+<button type="button" class="carousel-next" aria-label="Attaque suivante">›</button>
+</div>
+</div>
+</section>
+<section data-ctx="labo">
+<h3 data-no-ctx>Laboratoire de biologie</h3>
+<div class="block">
+<blockquote>
+<p>Dans un laboratoire multi-sites, deux risques dominent : un compte volé sur un seul site de prélèvement peut ouvrir les résultats de tous les sites, et un arrêt du centre d'analyse prive de résultats tous les soignants qui en dépendent.</p>
+</blockquote>
+</div>
+<div class="carousel" role="region" aria-roledescription="carrousel" aria-label="Attaques réelles, Laboratoire de biologie">
+<div class="carousel-track" tabindex="0">
+<article class="attack" id="attaque-labo-1" aria-roledescription="fiche" aria-label="1 sur 2">
+<h4>Synnovis : un laboratoire paralysé, des hôpitaux à l'arrêt</h4>
+<blockquote>
+<p><span class="status status-confirme">Confirmé</span> · Juin 2024 · Londres</p>
+<p><strong>Plus de 800 opérations annulées en une semaine</strong></p>
+</blockquote>
+<p>Voir dans la matrice : <a href="#menace-labo-rancongiciel">Rançongiciel</a></p>
+<p>Menace : le groupe cybercriminel Qilin · Vecteur : non communiqué</p>
+<p>Ce qui s'est passé : un rançongiciel a bloqué Synnovis, prestataire d'analyses de biologie de plusieurs hôpitaux. Faute de résultats, plus de 800 opérations ont été annulées la semaine suivante. Des données de patients ont ensuite été publiées.</p>
+<p>Dans votre laboratoire : c'est le scénario le plus proche du vôtre. Si votre centre d'analyse s'arrête, tous les sites de prélèvement s'arrêtent avec lui, et les médecins, cliniques et hôpitaux qui attendent vos résultats retardent leurs soins. L'attaque d'un seul laboratoire a suffi à paralyser plusieurs hôpitaux.</p>
+<details>
+<summary>Sources et détails</summary>
+<ul>
+<li>Rançongiciel attribué au groupe Qilin, environ 400 Go de données publiés.</li>
+<li>Plus de 900 000 personnes concernées (estimation). Retour à la normale fin 2024.</li>
+<li>Sources : <a href="https://securityaffairs.com/164541/cyber-crime/londol-hospitals-canceled-800-operations-ransomware.html">Security Affairs</a>, <a href="https://www.computerweekly.com/news/366589583/Qilin-ransomware-gang-publishes-stolen-NHS-data-online">Computer Weekly</a></li>
+</ul>
+</details>
+</article>
+<article class="attack" id="attaque-labo-2" aria-roledescription="fiche" aria-label="2 sur 2">
+<h4>Cegedim : des comptes de médecins utilisés pour aspirer des dossiers patients</h4>
+<blockquote>
+<p><span class="status status-confirme">Confirmé</span> · Fin 2025 · France</p>
+<p><strong>1 500 comptes de médecins utilisés, 11 à 15 millions de dossiers estimés</strong></p>
+</blockquote>
+<p>Voir dans la matrice : <a href="#menace-labo-hameconnage">Hameçonnage et compromission de comptes</a></p>
+<p>Menace : attaquant non identifié · Vecteur : des comptes de médecins, avec des identifiants probablement volés</p>
+<p>Ce qui s'est passé : des requêtes anormales sont parties des comptes de 1 500 médecins utilisateurs d'un logiciel médical, MonLogicielMedical. Des dossiers patients ont été extraits, y compris les notes libres des médecins.</p>
+<p>Dans votre laboratoire : votre personnel se connecte depuis plusieurs sites à la plateforme de résultats, reliée à Practilio. Un seul compte volé, sur n'importe quel site de prélèvement, peut suffire à extraire les résultats de patients de tous les sites, sans intrusion technique visible.</p>
+<details>
+<summary>Sources et détails</summary>
+<ul>
+<li>Hypothèse dominante, non confirmée : identifiants volés (logiciel espion, hameçonnage, absence de double authentification).</li>
+<li>Ampleur estimée par France 2 : 11 à 15 millions de patients.</li>
+<li>Sources : <a href="https://www.caducee.net/actualite-medicale/16821/incident-mlm-chez-cegedim-anatomie-d-une-fuite-de-donnees-estimee-a-11-15-millions-de-dossiers-patients.html">Caducée</a>, <a href="https://www.lemondeinformatique.fr/actualites/lire-le-piratage-du-logiciel-medical-de-cegedim-refait-surface-99493.html">Le Monde Informatique</a></li>
+</ul>
+</details>
+</article>
+</div>
+<div class="carousel-nav" hidden>
+<button type="button" class="carousel-prev" aria-label="Attaque précédente">‹</button>
+<span class="carousel-count" aria-live="polite"></span>
+<button type="button" class="carousel-next" aria-label="Attaque suivante">›</button>
+</div>
+</div>
+</section>
+<section data-ctx="hopital">
+<h3 data-no-ctx>Hôpital public</h3>
+<div class="block">
+<blockquote>
+<p>Dans un hôpital, la menace la plus lourde est l'arrêt des soins : par une attaque directe sur votre système d'information, ou par celle d'un prestataire dont vous dépendez. Avec de nombreux services, comptes et intervenants extérieurs, les points d'entrée sont nombreux.</p>
+</blockquote>
+</div>
+<div class="carousel" role="region" aria-roledescription="carrousel" aria-label="Attaques réelles, Hôpital public">
+<div class="carousel-track" tabindex="0">
+<article class="attack" id="attaque-hopital-1" aria-roledescription="fiche" aria-label="1 sur 2">
+<h4>Corbeil-Essonnes : rançongiciel puis publication des données</h4>
+<blockquote>
+<p><span class="status status-confirme">Confirmé</span> · Août 2022 · Corbeil-Essonnes</p>
+<p><strong>Patients transférés, opérations reportées, données publiées</strong></p>
+</blockquote>
+<p>Voir dans la matrice : <a href="#menace-hopital-rancongiciel">Rançongiciel</a></p>
+<p>Menace : le groupe cybercriminel LockBit · Vecteur : non précisé dans les sources</p>
+<p>Ce qui s'est passé : le groupe LockBit a chiffré les systèmes du Centre hospitalier Sud Francilien. L'hôpital a refusé de payer, a transféré des patients et a reporté des opérations. Un mois plus tard, des données de patients, de personnels et de partenaires ont été publiées.</p>
+<p>Dans votre hôpital : c'est un hôpital public français, comparable au vôtre. Pour les équipes, c'est le retour au fonctionnement sans informatique : patients transférés, opérations reportées. Puis la fuite des données expose patients et agents au chantage et à l'hameçonnage ciblé. Le mode dégradé se prépare avant l'attaque, pas pendant.</p>
+<details>
+<summary>Sources et détails</summary>
+<ul>
+<li>Rançongiciel LockBit 3.0, attaque le 21 août 2022, environ 11 Go publiés le 23 septembre 2022.</li>
+<li>Sources : <a href="https://www.lemondeinformatique.fr/actualites/lire-piratage-du-ch-sud-francilien-de-corbeil-essonnes-des-donnees-sensibles-divulguees-88114.html">Le Monde Informatique</a>, <a href="https://www.lequotidiendumedecin.fr/hopital/cyberattaque-de-corbeil-essonnes-les-pirates-divulguent-des-donnees-de-sante-volees-pour-exercer-un">Le Quotidien du Médecin</a></li>
+</ul>
+</details>
+</article>
+<article class="attack" id="attaque-hopital-2" aria-roledescription="fiche" aria-label="2 sur 2">
+<h4>Synnovis : un prestataire attaqué, des hôpitaux à l'arrêt</h4>
+<blockquote>
+<p><span class="status status-confirme">Confirmé</span> · Juin 2024 · Londres</p>
+<p><strong>Plus de 800 opérations annulées en une semaine</strong></p>
+</blockquote>
+<p>Voir dans la matrice : <a href="#menace-hopital-prestataire">Attaque par rebond via un prestataire</a></p>
+<p>Menace : le groupe cybercriminel Qilin, chez un prestataire · Vecteur : non communiqué</p>
+<p>Ce qui s'est passé : un rançongiciel a bloqué Synnovis, le prestataire d'analyses de biologie de plusieurs hôpitaux. Faute de résultats, plus de 800 opérations ont été annulées la semaine suivante. Des données de patients ont ensuite été publiées.</p>
+<p>Dans votre hôpital : vous confiez la maintenance de vos automates et de votre imagerie à des prestataires, et vous dépendez d'autres partenaires pour vos soins. S'ils s'arrêtent, vos soins s'arrêtent aussi, sans que votre système ait été attaqué. Il faut savoir lesquels sont vitaux et comment travailler sans eux.</p>
+<details>
+<summary>Sources et détails</summary>
+<ul>
+<li>Rançongiciel attribué au groupe Qilin, environ 400 Go de données publiés.</li>
+<li>Plus de 900 000 personnes concernées (estimation). Retour à la normale fin 2024.</li>
+<li>Sources : <a href="https://securityaffairs.com/164541/cyber-crime/londol-hospitals-canceled-800-operations-ransomware.html">Security Affairs</a>, <a href="https://www.computerweekly.com/news/366589583/Qilin-ransomware-gang-publishes-stolen-NHS-data-online">Computer Weekly</a></li>
+</ul>
+</details>
+</article>
+</div>
+<div class="carousel-nav" hidden>
+<button type="button" class="carousel-prev" aria-label="Attaque précédente">‹</button>
+<span class="carousel-count" aria-live="polite"></span>
+<button type="button" class="carousel-next" aria-label="Attaque suivante">›</button>
+</div>
+</div>
+</section>
+</section>
+</div>
+</div>
+
+    <p class="next-step">Étape suivante : <a href="responsabilites.html">Qui fait quoi</a></p>
+  </main>
+  <footer class="site">Projet pédagogique EPITA · Practilio est une entreprise fictive · <a href="demarche.html">Démarche et sources</a></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

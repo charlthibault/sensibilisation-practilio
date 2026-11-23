@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acteurs, prestataires, outils · Guide cyber Practilio</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <p class="disclaimer" role="note"><strong>Projet pédagogique EPITA.</strong> Practilio est une entreprise fictive : ce site n'est pas un service réel.</p>
+  <header class="site">
+    <a class="brand" href="index.html">Guide cyber Practilio</a>
+    <nav class="menu" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="risques.html">Mes risques</a></li>
+      <li><a href="responsabilites.html">Qui fait quoi</a></li>
+      <li><a href="obligations.html">Mes obligations</a></li>
+      <li><a href="premiers-pas.html">Premiers pas</a></li>
+      <li><a href="evaluer.html">Vérifier mes réflexes</a></li>
+      <li><a href="incident.html">Incident : qui contacter</a></li>
+      <li><a href="ressources.html" aria-current="page">Acteurs, prestataires, outils</a></li>
+    </ul>
+    </nav>
+    <p class="current-choice" id="current-choice"></p>
+  </header>
+  <main>
+<h1>Acteurs, prestataires, outils</h1>
+<p data-no-ctx>Choisissez votre contexte pour voir ce qui vous concerne :</p>
+<div class="selector">
+  <fieldset><legend>Je travaille dans…</legend>
+    <button type="button" data-pick-ctx="cabinet">Un cabinet libéral (2 à 5 médecins)</button>
+    <button type="button" data-pick-ctx="labo">Un laboratoire de biologie multi-sites</button>
+    <button type="button" data-pick-ctx="hopital">Un hôpital public</button>
+  </fieldset>
+</div>
+
+<div class="tabs" data-tabs>
+<div class="tab-list" aria-label="Sections de la page">
+  <a href="#acteurs" data-tab="acteurs">Acteurs publics</a>
+  <a href="#prestataires" data-tab="prestataires">Prestataires</a>
+  <a href="#outils" data-tab="outils">Outils</a>
+  <a href="#prioriser" data-tab="prioriser">Priorités</a>
+</div>
+<div class="tab-panel" id="acteurs">
+<h2>Acteurs publics et ressources</h2>
+<div class="block">
+<p>Ces organismes sont publics et la plupart de leurs services sont gratuits. En cas d'incident, partez plutôt de la page <a href="incident.html">Incident : qui contacter</a>.</p>
+<h4>Cybersécurité, tous secteurs</h4>
+<table>
+<thead><tr><th>Acteur</th><th>Ce qu'il fait pour vous</th><th>Pour qui</th></tr></thead>
+<tbody>
+<tr><td><a href="https://www.cybermalveillance.gouv.fr/">Cybermalveillance.gouv.fr</a> et <a href="https://www.17cyber.gouv.fr/">17Cyber</a></td><td>Diagnostic en ligne, fiches par type d'attaque, annuaire de prestataires labellisés près de chez vous.</td><td>Cabinet</td></tr>
+<tr><td><a href="https://cyber.gouv.fr/csirt-territoriaux">CSIRT de votre région</a></td><td>Aide gratuite face à une attaque : premier diagnostic, premières mesures, orientation vers un prestataire. Il n'intervient pas lui-même.</td><td>Cabinet, site isolé d'un laboratoire</td></tr>
+<tr><td>ANSSI (<a href="https://cyber.gouv.fr/publications">publications</a>) et <a href="https://www.cert.ssi.gouv.fr/">CERT-FR</a></td><td>Guides de référence (hygiène informatique, rançongiciels), alertes de sécurité. Reçoit les incidents des établissements OSE ou OIV, et demain des entités NIS 2. Avec la DGE : <a href="https://www.entreprises.gouv.fr/la-dge/publications/la-cybersecurite-pour-les-tpepme-en-13-questions">la cybersécurité des petites structures en 13 questions</a>.</td><td>Laboratoire, hôpital ; le guide DGE pour un cabinet</td></tr>
+<tr><td><a href="https://www.cnil.fr/fr/guide-de-la-securite-des-donnees-personnelles-nouvelle-edition-2024">CNIL</a></td><td>Guide de la sécurité des données personnelles ; reçoit les notifications de violation.</td><td>Tous</td></tr>
+</tbody></table>
+<h4>Propres à la santé</h4>
+<table>
+<thead><tr><th>Acteur</th><th>Ce qu'il fait pour vous</th><th>Pour qui</th></tr></thead>
+<tbody>
+<tr><td>ANS (Agence du numérique en santé)</td><td>Règles de sécurité du secteur (<a href="https://esante.gouv.fr/produits-services/pgssi-s">PGSSI-S</a>), <a href="https://esante.gouv.fr/actualites/lans-publie-un-memento-de-securite-informatique-pour-les-professionnels-de-sante-en-exercice-liberal">mémento pour les libéraux</a>, Pro Santé Connect, <a href="https://esante.gouv.fr/strategie-nationale/cybersecurite">programme CaRE</a> pour les établissements.</td><td>Tous ; CaRE pour l'hôpital</td></tr>
+<tr><td><a href="https://esante.gouv.fr/securite/cert-sante">CERT Santé</a> (ANS)</td><td>Appui après un signalement sur le portail national ; alertes du secteur sur <a href="https://cyberveille.esante.gouv.fr/">Cyberveille santé</a>.</td><td>Tous</td></tr>
+<tr><td>ARS et GRADeS</td><td>L'ARS reçoit les signalements d'incidents graves et finance CaRE ; le <a href="https://esante.gouv.fr/faq/que-sont-les-groupements-regionaux-dappui-au-developpement-de-la-esante-grades">GRADeS</a> est son relais pour le numérique en santé. L'offre varie selon les régions (<a href="https://esante.gouv.fr/strategie-nationale/presentation-cartographie-des-services-numeriques-territoriaux">services de ma région</a>).</td><td>Tous, surtout l'hôpital</td></tr>
+<tr><td><a href="https://ansm.sante.fr/documents/reference/cybersecurite-des-dm-et-dmdiv">ANSM</a></td><td>Autorité des dispositifs médicaux (automates, réactifs, biomédical) : réactovigilance et matériovigilance.</td><td>Laboratoire, hôpital</td></tr>
+<tr><td><a href="https://www.cofrac.fr/">COFRAC</a></td><td>Accrédite le laboratoire (ISO 15189), système d'information compris.</td><td>Laboratoire</td></tr>
+<tr><td>HAS</td><td><a href="https://www.has-sante.fr/jcms/p_3563407/fr/mettre-en-oeuvre-le-6e-cycle-de-certification">Certification des établissements</a>, qui inclut la maîtrise des risques numériques.</td><td>Hôpital</td></tr>
+<tr><td>Ordres professionnels</td><td>Ordre des médecins : <a href="https://esante.gouv.fr/sites/default/files/media/document/Kit%20r%C3%A9silience_VF.pdf">kit résilience</a> avec l'ANS, pour continuer à soigner sans informatique. Ordre des pharmaciens : <a href="https://www.ordre.pharmacien.fr/je-suis/pharmacien/je-suis-pharmacien-biologiste-medical/mon-exercice-professionnel/la-protection-des-donnees-personnelles-en-laboratoire-de-biologie-medicale">protection des données en laboratoire</a>.</td><td>Cabinet ; laboratoire</td></tr>
+</tbody></table>
+<p>À l'hôpital, le premier recours reste la DSI et le RSSI de l'établissement ou du GHT.</p>
+</div>
+</div>
+<div class="tab-panel" id="prestataires">
+<h2>Prestataires</h2>
+<div class="block">
+<p>Un prestataire vient faire ce que votre équipe ne peut pas faire seule : surveiller le réseau jour et nuit, intervenir pendant une attaque, tester vos défenses ou former le personnel. Pour le choisir, un repère simple : un label ou une qualification délivrés par l'État.</p>
+<ul>
+<li>Pour un cabinet ou une petite structure : un prestataire labellisé ExpertCyber, trouvé près de chez vous via Cybermalveillance.gouv.fr. <a href="https://www.entreprises.gouv.fr/la-dge/actualites/mon-expertcyber-un-service-pour-aider-les-tpe-pme-renforcer-leur-cybersecurite">Mon ExpertCyber</a></li>
+<li>Pour un laboratoire multi-sites ou un hôpital : un prestataire qualifié par l'ANSSI pour le service recherché, ou une offre du catalogue de l'ANS pour les établissements de santé. <a href="https://esante.gouv.fr/strategie-nationale/cybersecurite/catalogue-offres-cyber">Catalogue des offres cyber (ANS)</a></li>
+</ul>
+<h4>Quelques prestataires, par type de service</h4>
+<table>
+<thead><tr><th>Prestataire</th><th>Ce qu'il fait</th><th>Repère</th><th>Pour qui</th></tr></thead>
+<tbody>
+<tr><td>Orange Cyberdefense</td><td>Surveillance du réseau (SOC), réponse à incident, audit</td><td>Qualifié ANSSI PDIS, PRIS et PASSI ; présent au catalogue de l'ANS</td><td>Hôpital, laboratoire multi-sites</td></tr>
+<tr><td>Intrinsec</td><td>Réponse à incident (CERT Intrinsec), gestion de crise</td><td>Qualifié ANSSI PRIS</td><td>Hôpital, laboratoire</td></tr>
+<tr><td>Synacktiv</td><td>Tests d'intrusion, audit de sécurité</td><td>Qualifié ANSSI PASSI</td><td>Hôpital, laboratoire</td></tr>
+<tr><td>Mailinblack</td><td>Filtrage des courriels, simulations d'hameçonnage</td><td>Utilisé par des établissements de santé (GHT)</td><td>Cabinet, laboratoire, hôpital</td></tr>
+<tr><td>Conscio Technologies</td><td>Sensibilisation du personnel (plateforme Sensiwave, hébergée en France)</td><td>Programmes par secteur</td><td>Laboratoire, hôpital</td></tr>
+</tbody></table>
+<blockquote>
+<p>Practilio ne recommande aucun prestataire ou éditeur cité sur cette page et ne reçoit rien de leur part. Avant de signer, vérifiez que la qualification est toujours valide sur la liste de l'ANSSI. Qualifications relevées le 23/11/2026.</p>
+</blockquote>
+</div>
+</div>
+<div class="tab-panel" id="outils">
+<h2>Catégories d'outils</h2>
+<div class="block">
+<p>Un cabinet n'a pas besoin de tout : commencez par le gestionnaire de mots de passe, la double authentification et la sauvegarde. Les autres catégories concernent surtout un laboratoire ou un hôpital, avec une équipe informatique pour les exploiter.</p>
+<table>
+<thead><tr><th>Type d'outil</th><th>À quoi ça sert</th><th>Exemples d'éditeurs ou de technologies</th></tr></thead>
+<tbody>
+<tr><td>Gestionnaire de mots de passe</td><td>Un coffre-fort qui retient un mot de passe différent pour chaque logiciel : vous n'en retenez plus qu'un.</td><td>LockSelf (LockPass), éditeur français ; KeePass / KeePassXC, logiciel libre ; Bitwarden</td></tr>
+<tr><td>Double authentification et gestion des comptes (MFA, IAM)</td><td>Un mot de passe volé ne suffit plus : il faut aussi la carte, le téléphone ou une clé.</td><td>Carte CPS et e-CPS avec Pro Santé Connect (santé, ANS) ; Microsoft Entra ID ; Okta ; Cisco Duo</td></tr>
+<tr><td>Surveillance de l'exposition sur Internet (EASM)</td><td>Repérer ce que votre structure expose sur Internet sans le savoir : accès distants, serveurs oubliés, logiciels pas à jour.</td><td>Patrowl, éditeur français ; Microsoft Defender External Attack Surface Management ; Tenable Attack Surface Management ; Censys</td></tr>
+<tr><td>Sauvegarde</td><td>La seule vraie parade au rançongiciel : pouvoir tout remettre en état sans payer.</td><td>Veeam ; Atempo, éditeur français ; Acronis</td></tr>
+<tr><td>Protection des postes et serveurs (EDR, XDR)</td><td>Un « super antivirus » qui repère un comportement anormal et isole le poste à distance.</td><td>HarfangLab, éditeur français ; Microsoft Defender for Endpoint ; CrowdStrike Falcon ; SentinelOne</td></tr>
+<tr><td>Filtrage de la messagerie et anti-hameçonnage</td><td>Le courriel reste la porte d'entrée la plus fréquente.</td><td>Mailinblack, éditeur français ; Proofpoint ; Microsoft Defender for Office 365</td></tr>
+<tr><td>Recherche de vulnérabilités</td><td>Savoir ce qui n'est pas à jour à l'intérieur du réseau.</td><td>Tenable (Nessus) ; Qualys ; Greenbone (OpenVAS), logiciel libre</td></tr>
+<tr><td>Gestion des appareils mobiles (MDM)</td><td>Garder la main sur les téléphones et tablettes qui accèdent aux données.</td><td>Microsoft Intune ; Jamf (appareils Apple) ; Ivanti</td></tr>
+</tbody></table>
+<blockquote>
+<p>Liste relevée le 23/11/2026, sans ordre de préférence.</p>
+</blockquote>
+</div>
+<div class="block">
+<h4>Équipements médicaux connectés et bâtiment (OT de santé)</h4>
+<p>Pompes à perfusion, imagerie, moniteurs, automates de laboratoire, mais aussi chauffage, ventilation des blocs et contrôle d'accès : ces équipements sont reliés au réseau, rarement mis à jour, et un antivirus classique ne peut pas y être installé. Des outils spécialisés les inventorient, surveillent leurs échanges et aident à les isoler du reste du réseau.</p>
+<table>
+<thead><tr><th>Éditeur</th><th>Ce qu'il apporte</th></tr></thead>
+<tbody>
+<tr><td>Claroty (xDome for Healthcare, issu du rachat de Medigate)</td><td>Inventaire et surveillance des dispositifs médicaux</td></tr>
+<tr><td>Armis</td><td>Découverte de tous les équipements connectés, dont le biomédical</td></tr>
+<tr><td>Asimily</td><td>Sécurité des dispositifs médicaux connectés et priorisation des vulnérabilités</td></tr>
+<tr><td>Nozomi Networks</td><td>Surveillance des systèmes industriels et de la gestion technique du bâtiment (GTB). <a href="https://www.nozominetworks.com/solutions/building-automation-systems/">Page dédiée</a></td></tr>
+<tr><td>Stormshield, éditeur français</td><td>Pare-feu pour cloisonner les réseaux biomédicaux et GTB et sécuriser la télémaintenance. <a href="https://stormshield.com/products-services/by-industry/health-and-healthcare-facilities/">Page santé</a></td></tr>
+</tbody></table>
+<p>Surtout utile à un hôpital et à un laboratoire (automates). Un cabinet est rarement concerné, sauf équipement d'imagerie relié au réseau.</p>
+<blockquote>
+<p>Liste relevée le 23/11/2026, sans ordre de préférence.</p>
+</blockquote>
+</div>
+</div>
+<div class="tab-panel" id="prioriser">
+<h2>Quoi prioriser selon votre contexte</h2>
+<section data-ctx="cabinet">
+<h3 data-no-ctx>Cabinet libéral</h3>
+<div class="block">
+<p>Dans un cabinet, peu de gestes suffisent à couvrir l'essentiel. Commencez par le haut de la liste : chaque ligne renvoie à la menace qu'elle traite.</p>
+<table>
+<thead><tr><th>#</th><th>Par quoi commencer</th><th>Contre quoi</th><th>Responsable</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Activer la double authentification sur Practilio et la messagerie, un compte par personne</td><td><a href="risques.html#menace-cabinet-hameconnage">Vol de compte</a></td><td>Practilio la propose, vous l'activez</td></tr>
+<tr><td>2</td><td>Encadrer l'accès à distance du prestataire : un compte à son nom, ouvert seulement à votre demande</td><td><a href="risques.html#menace-cabinet-prestataire">Rebond via un prestataire</a></td><td>Vous fixez la règle, le prestataire l'applique</td></tr>
+<tr><td>3</td><td>Chiffrer les portables des médecins et verrouiller les sessions</td><td><a href="risques.html#menace-cabinet-perte-materiel">Perte ou vol de matériel</a></td><td>Votre prestataire</td></tr>
+<tr><td>4</td><td>Aucune donnée de santé sur une boîte mail personnelle ou un outil non validé : utiliser MSSanté</td><td><a href="risques.html#menace-cabinet-fuite">Fuite par erreur</a></td><td>Chacun, au quotidien</td></tr>
+<tr><td>5</td><td>Sauvegarder les postes et tester la restauration</td><td><a href="risques.html#menace-cabinet-rancongiciel">Rançongiciel</a></td><td>Votre prestataire ; les données Practilio sont sauvegardées par Practilio</td></tr>
+</tbody></table>
+<h4>Qui solliciter</h4>
+<ul>
+<li>Pour mettre en place ces mesures : votre prestataire informatique. Si vous n'en avez pas, un prestataire labellisé ExpertCyber près de chez vous (voir <a href="#prestataires">Prestataires</a>).</li>
+<li>Pour être conseillé gratuitement : le GRADeS de votre région et les guides de l'ANS pour les libéraux (voir <a href="#acteurs">Acteurs publics</a>).</li>
+<li>En cas d'attaque : voir <a href="incident.html#interlocuteurs">Incident : qui contacter</a>.</li>
+</ul>
+</div>
+</section>
+<section data-ctx="labo">
+<h3 data-no-ctx>Laboratoire de biologie</h3>
+<div class="block">
+<p>Dans un laboratoire multi-sites, deux risques sont critiques : le vol de compte et le rançongiciel. Commencez par eux, puis traitez les accès des prestataires et du personnel.</p>
+<table>
+<thead><tr><th>#</th><th>Par quoi commencer</th><th>Contre quoi</th><th>Responsable</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Double authentification pour tout le personnel, sur tous les sites, et en priorité sur la plateforme de résultats</td><td><a href="risques.html#menace-labo-hameconnage">Vol de compte</a></td><td>Practilio la propose, l'équipe IT la déploie</td></tr>
+<tr><td>2</td><td>Sauvegardes déconnectées du réseau et plan de continuité si le centre d'analyse s'arrête</td><td><a href="risques.html#menace-labo-rancongiciel">Rançongiciel</a></td><td>Équipe IT et direction du laboratoire</td></tr>
+<tr><td>3</td><td>Cadrer la télémaintenance des automates : ouverte à la demande, nominative, tracée</td><td><a href="risques.html#menace-labo-prestataire">Rebond via un prestataire</a>, <a href="risques.html#menace-labo-ot">équipements connectés</a></td><td>Équipe IT avec les fabricants</td></tr>
+<tr><td>4</td><td>Retirer les accès le jour du départ, sur tous les sites et toutes les applications</td><td><a href="risques.html#menace-labo-acces-illegitime">Accès illégitime</a></td><td>Ressources humaines et équipe IT</td></tr>
+<tr><td>5</td><td>Contrôler les envois de résultats (destinataire, canal MSSanté)</td><td><a href="risques.html#menace-labo-fuite">Fuite par erreur</a></td><td>Biologistes et secrétariat</td></tr>
+</tbody></table>
+<h4>Qui solliciter</h4>
+<ul>
+<li>En interne : le DPO du laboratoire, obligatoire pour une structure multi-sites, et le responsable qualité (l'accréditation COFRAC couvre aussi le système d'information).</li>
+<li>Pour se faire accompagner : un prestataire qualifié par l'ANSSI pour le service recherché, ou une offre du catalogue de l'ANS (voir <a href="#prestataires">Prestataires</a>).</li>
+<li>Pour les automates : le fabricant, et l'ANSM en cas d'incident qui fausse des résultats.</li>
+<li>En cas d'attaque : voir <a href="incident.html#interlocuteurs">Incident : qui contacter</a>.</li>
+</ul>
+</div>
+</section>
+<section data-ctx="hopital">
+<h3 data-no-ctx>Hôpital public</h3>
+<div class="block">
+<p>À l'hôpital, trois risques sont critiques : le rançongiciel, l'accès illégitime aux dossiers et l'attaque sur les équipements connectés. Les premières mesures rejoignent les prérequis du programme CaRE, qui conditionne une partie des financements.</p>
+<table>
+<thead><tr><th>#</th><th>Par quoi commencer</th><th>Contre quoi</th><th>Responsable</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Double authentification pour les accès distants, les comptes d'administration et Practilio : c'est le point d'entrée de la plupart des attaques</td><td><a href="risques.html#menace-hopital-hameconnage">Vol de compte</a></td><td>Practilio la propose, la DSI la déploie</td></tr>
+<tr><td>2</td><td>Réduire l'exposition sur Internet et fermer les interconnexions oubliées (VPN, accès des mainteneurs)</td><td><a href="risques.html#menace-hopital-ot">Équipements connectés</a>, <a href="risques.html#menace-hopital-prestataire">rebond via un prestataire</a></td><td>DSI, service biomédical et services techniques</td></tr>
+<tr><td>3</td><td>Sauvegardes déconnectées et exercice de crise cyber pour préparer le fonctionnement en mode dégradé</td><td><a href="risques.html#menace-hopital-rancongiciel">Rançongiciel</a></td><td>DSI et direction</td></tr>
+<tr><td>4</td><td>Droits au plus juste et contrôle des traces de consultation des dossiers</td><td><a href="risques.html#menace-hopital-acces-illegitime">Accès illégitime</a></td><td>DSI, DPO et encadrement des services</td></tr>
+<tr><td>5</td><td>Inventorier et cloisonner le biomédical et la GTB</td><td><a href="risques.html#menace-hopital-ot">Équipements connectés</a></td><td>DSI et service biomédical</td></tr>
+</tbody></table>
+<h4>Qui solliciter</h4>
+<ul>
+<li>En interne : le DPO, la DSI de l'établissement support du GHT, le service biomédical.</li>
+<li>Accompagnement public : l'ARS et le GRADeS de votre région (programme CaRE), le CERT Santé de l'ANS (voir <a href="#acteurs">Acteurs publics</a>).</li>
+<li>Prestataires : un prestataire qualifié par l'ANSSI, ou une offre passée par une centrale d'achat du secteur (voir <a href="#prestataires">Prestataires</a>).</li>
+<li>En cas d'attaque : voir <a href="incident.html#interlocuteurs">Incident : qui contacter</a>.</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+
+    <p class="next-step">Étape suivante : <a href="demarche.html">Démarche et sources</a></p>
+  </main>
+  <footer class="site">Projet pédagogique EPITA · Practilio est une entreprise fictive · <a href="demarche.html">Démarche et sources</a></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
